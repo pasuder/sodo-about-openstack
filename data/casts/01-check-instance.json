@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "width": 80,
+  "height": 25,
+  "duration": 21.346326,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.401189,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.011985,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K\u001b[?1h\u001b="
+    ],
+    [
+      9.1e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mssh ubuntu@54.38.136.26\u001b[27m"
+    ],
+    [
+      0.46598,
+      "\u001b[23D\u001b[27ms\u001b[27ms\u001b[27mh\u001b[27m \u001b[27mu\u001b[27mb\u001b[27mu\u001b[27mn\u001b[27mt\u001b[27mu\u001b[27m@\u001b[27m5\u001b[27m4\u001b[27m.\u001b[27m3\u001b[27m8\u001b[27m.\u001b[27m1\u001b[27m3\u001b[27m6\u001b[27m.\u001b[27m2\u001b[27m6"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001018,
+      "\u001b]2;ssh ubuntu@54.38.136.26\u0007\u001b]1;ubuntu@54.38.136.26\u0007"
+    ],
+    [
+      0.397871,
+      "The authenticity of host '54.38.136.26 (54.38.136.26)' can't be established.\r\nECDSA key fingerprint is SHA256:/HSLGQ5axB/+XaOMEeDSDflPD9ZeIY4IZUaonxetJHY.\r\nAre you sure you want to continue connecting (yes/no)? "
+    ],
+    [
+      0.998132,
+      "y"
+    ],
+    [
+      0.052078,
+      "e"
+    ],
+    [
+      0.179861,
+      "s"
+    ],
+    [
+      0.164791,
+      "\r\n"
+    ],
+    [
+      0.002066,
+      "Warning: Permanently added '54.38.136.26' (ECDSA) to the list of known hosts.\r\r\n"
+    ],
+    [
+      0.984074,
+      "Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-108-generic x86_64)"
+    ],
+    [
+      0.000192,
+      "\r\n\r\n * Documentation:  https://help.ubuntu.com"
+    ],
+    [
+      0.00081,
+      "\r\n * Management:     https://landscape.canonical.com\r\n * Support:        https://ubuntu.com/advantage\r\n"
+    ],
+    [
+      0.06264,
+      "\r\n  Get cloud support with Ubuntu Advantage Cloud Guest:\r\n    http://www.ubuntu.com/business/services/cloud\r\n\r\n52 packages can be updated.\r\n36 updates are security updates.\r\n\r\n\r\n*** System restart required ***\r\n\r\nThe programs included with the Ubuntu system are free software;\r\nthe exact distribution terms for each program are described in the\r\nindividual files in /usr/share/doc/*/copyright.\r\n\r\nUbuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by\r\napplicable law.\r\n\r\nTo run a command as administrator (user \"root\"), use \"sudo <command>\".\r\nSee \"man sudo_root\" for details.\r\n\r\n"
+    ],
+    [
+      0.020853,
+      "_____________________________________________________________________\r\nWARNING! Your environment specifies an invalid locale.\r\n The unknown environment variables are:"
+    ],
+    [
+      0.000113,
+      "\r\n   LC_CTYPE=pl_PL.UTF-8 LC_ALL="
+    ],
+    [
+      0.00101,
+      "\r\n This can affect your user experience significantly, including the\r\n ability to manage packages. You may install the locales by running:\r\n\r\n"
+    ],
+    [
+      0.046215,
+      "   sudo apt-get install language-pack-pl\r\n     or\r\n   sudo locale-gen pl_PL.UTF-8\r\n\r\nTo see all available language packs, run:\r\n   apt-cache search \"^language-pack-[a-z][a-z]$\"\r\nTo disable this message for all users, run:\r\n   sudo touch /var/lib/cloud/instance/locale-check.skip\r\n_____________________________________________________________________\r\n\r\n"
+    ],
+    [
+      0.018476,
+      "\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "lscpu | grep -e Architecture -e CPU -e Thread -e Core"
+    ],
+    [
+      0.455835,
+      "\r\n"
+    ],
+    [
+      0.007205,
+      "\u001b[01;31m\u001b[KArchitecture\u001b[m\u001b[K:          x86_64\r\n\u001b[01;31m\u001b[KCPU\u001b[m\u001b[K op-mode(s):        32-bit, 64-bit"
+    ],
+    [
+      6e-05,
+      "\r\n"
+    ],
+    [
+      0.000976,
+      "\u001b[01;31m\u001b[KCPU\u001b[m\u001b[K(s):                1\r\nOn-line \u001b[01;31m\u001b[KCPU\u001b[m\u001b[K(s) list:   0\r\n\u001b[01;31m\u001b[KThread\u001b[m\u001b[K(s) per core:    1"
+    ],
+    [
+      0.060566,
+      "\r\n\u001b[01;31m\u001b[KCore\u001b[m\u001b[K(s) per socket:    1\r\n\u001b[01;31m\u001b[KCPU\u001b[m\u001b[K family:            6\r\nModel name:            Intel \u001b[01;31m\u001b[KCore\u001b[m\u001b[K Processor (Haswell, no TSX)\r\n\u001b[01;31m\u001b[KCPU\u001b[m\u001b[K MHz:               2394.454\r\nNUMA node0 \u001b[01;31m\u001b[KCPU\u001b[m\u001b[K(s):     0\r\n\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "free -m\r\n"
+    ],
+    [
+      0.00368,
+      "              total        used        free      shared  buff/cache   available\r\nMem:           3855          54        3142           5         658        3558\r\nSwap:             0           0           0\r\n"
+    ],
+    [
+      0.001072,
+      "\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "lsblk"
+    ],
+    [
+      0.303865,
+      "\r\n"
+    ],
+    [
+      0.005463,
+      "NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT\r\nsda      8:0    0  20G  0 disk \r\n`-sda1   8:1    0  20G  0 part /\r\n"
+    ],
+    [
+      0.000834,
+      "\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "ip"
+    ],
+    [
+      0.000102,
+      " "
+    ],
+    [
+      0.000771,
+      "a"
+    ],
+    [
+      0.000577,
+      "ddr "
+    ],
+    [
+      0.001041,
+      "sh"
+    ],
+    [
+      0.065936,
+      "ow ens3"
+    ],
+    [
+      0.402186,
+      "\r\n"
+    ],
+    [
+      0.003183,
+      "2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000"
+    ],
+    [
+      0.000161,
+      "\r\n    link/ether fa:16:3e:5b:71:db brd ff:ff:ff:ff:ff:ff\r\n"
+    ],
+    [
+      0.000792,
+      "    inet 54.38.136.26/32 brd 54.38.136.26 scope global ens3\r\n       valid_lft forever preferred_lft forever\r\n    inet6 fe80::f816:3eff:fe5b:71db/64 scope link "
+    ],
+    [
+      0.064555,
+      "\r\n       valid_lft forever preferred_lft forever\r\n\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "logout\r\n"
+    ],
+    [
+      0.011423,
+      "Connection to 54.38.136.26 closed.\r\r\n"
+    ],
+    [
+      0.002139,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                               \r \r"
+    ],
+    [
+      0.000322,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.029918,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      4.1e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

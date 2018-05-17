@@ -1,0 +1,1126 @@
+{
+  "version": 1,
+  "width": 110,
+  "height": 30,
+  "duration": 141.178281,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.764414,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                             \r \r"
+    ],
+    [
+      9.3e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts\u0007\u001b]1;..ation/scripts\u0007"
+    ],
+    [
+      0.057916,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mscripts\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      4.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000149,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mansible-playbook playbook-1.yml\u001b[27m"
+    ],
+    [
+      0.533454,
+      "\u001b[31D\u001b[27ma\u001b[27mn\u001b[27ms\u001b[27mi\u001b[27mb\u001b[27ml\u001b[27me\u001b[27m-\u001b[27mp\u001b[27ml\u001b[27ma\u001b[27my\u001b[27mb\u001b[27mo\u001b[27mo\u001b[27mk\u001b[27m \u001b[27mp\u001b[27ml\u001b[27ma\u001b[27my\u001b[27mb\u001b[27mo\u001b[27mo\u001b[27mk\u001b[27m-\u001b[27m1\u001b[27m.\u001b[27my\u001b[27mm\u001b[27ml\u001b[?1l\u001b>"
+    ],
+    [
+      3.8e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.000958,
+      "\u001b]2;ansible-playbook playbook-1.yml\u0007\u001b]1;ansible-playbook\u0007"
+    ],
+    [
+      1.550223,
+      "\u001b[1;35m [WARNING]: Unable to parse /etc/ansible/hosts as an inventory source\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      3.8e-05,
+      "\u001b[1;35m [WARNING]: No inventory was parsed, only implicit localhost is available\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      0.004617,
+      "\u001b[1;35m [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does\u001b[0m\r\n\u001b[1;35mnot match 'all'\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      0.906035,
+      "\r\nPLAY [localhost] *********************************************************************************************\r\n"
+    ],
+    [
+      0.023957,
+      "\r\nTASK [Add workshop key] **************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.006916,
+      "\r\nTASK [Create web instance] ***********************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.004955,
+      "\r\nTASK [Create DB instance] ************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.004306,
+      "\r\nTASK [Wait for SSH prompt (check if python is installed)] ****************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': True, 'server': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'n"
+    ],
+    [
+      3.6e-05,
+      "ame': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'dom"
+    ],
+    [
+      2.5e-05,
+      "ain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': "
+    ],
+    [
+      7.1e-05,
+      "None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MA"
+    ],
+    [
+      2.8e-05,
+      "C:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'ye3wzYasoneC', 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': "
+    ],
+    [
+      9.4e-05,
+      "'84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'openstack': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'p"
+    ],
+    [
+      4.5e-05,
+      "rogress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id"
+    ],
+    [
+      5e-05,
+      "': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-50"
+    ],
+    [
+      2.5e-05,
+      "33f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_i"
+    ],
+    [
+      2.9e-05,
+      "d': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'ye3wzYasoneC', 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54."
+    ],
+    [
+      0.000144,
+      "37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      1.376123,
+      "\u001b[1;30mFAILED - RETRYING: Wait for SSH prompt (check if python is installed) (5 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[1;30mFAILED - RETRYING: Wait for SSH prompt (check if python is installed) (4 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[1;30mFAILED - RETRYING: Wait for SSH prompt (check if python is installed) (3 retries left).\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': True, 'server': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'na"
+    ],
+    [
+      0.000629,
+      "me': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'doma"
+    ],
+    [
+      6.4e-05,
+      "in_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': N"
+    ],
+    [
+      2.8e-05,
+      "one}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC"
+    ],
+    [
+      0.000132,
+      ":mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'B2LhH43aAeqS', 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '"
+    ],
+    [
+      5.6e-05,
+      "84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'openstack': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'pro"
+    ],
+    [
+      5.3e-05,
+      "gress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id':"
+    ],
+    [
+      9.2e-05,
+      " '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033"
+    ],
+    [
+      5.8e-05,
+      "f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id'"
+    ],
+    [
+      0.000259,
+      ": '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'B2LhH43aAeqS', 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37"
+    ],
+    [
+      4.1e-05,
+      ".130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.0156,
+      "\r\nTASK [Add instances to inventory] ****************************************************************************\r\n"
+    ],
+    [
+      0.062501,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': True, 'server': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'n"
+    ],
+    [
+      4e-05,
+      "ame': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'dom"
+    ],
+    [
+      7.2e-05,
+      "ain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': "
+    ],
+    [
+      2.5e-05,
+      "None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MA"
+    ],
+    [
+      2.7e-05,
+      "C:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'ye3wzYasoneC', 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': "
+    ],
+    [
+      4e-05,
+      "'84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'openstack': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'p"
+    ],
+    [
+      4.1e-05,
+      "rogress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id"
+    ],
+    [
+      2.7e-05,
+      "': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-50"
+    ],
+    [
+      9.6e-05,
+      "33f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_i"
+    ],
+    [
+      3.2e-05,
+      "d': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'ye3wzYasoneC', 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54."
+    ],
+    [
+      7.3e-05,
+      "37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.005725,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': True, 'server': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'na"
+    ],
+    [
+      0.00014,
+      "me': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'doma"
+    ],
+    [
+      0.000133,
+      "in_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': N"
+    ],
+    [
+      4.8e-05,
+      "one}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC"
+    ],
+    [
+      2.6e-05,
+      ":mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'B2LhH43aAeqS', 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '"
+    ],
+    [
+      3.5e-05,
+      "84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'openstack': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'pro"
+    ],
+    [
+      2.8e-05,
+      "gress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id':"
+    ],
+    [
+      5.5e-05,
+      " '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033"
+    ],
+    [
+      4.4e-05,
+      "f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id'"
+    ],
+    [
+      7.2e-05,
+      ": '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': 'B2LhH43aAeqS', 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37"
+    ],
+    [
+      4.6e-05,
+      ".130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.013464,
+      "\r\nPLAY [db-1] **************************************************************************************************\r\n"
+    ],
+    [
+      0.004384,
+      "\r\nTASK [Gathering Facts] ***************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.009533,
+      "\r\nTASK [Set fact] **********************************************************************************************\r\n"
+    ],
+    [
+      0.065152,
+      "\u001b[0;32mok: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.010624,
+      "\r\nTASK [Configure second interface] ****************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007513,
+      "\r\nTASK [Enable second interface] *******************************************************************************\r\n"
+    ],
+    [
+      1.763414,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007074,
+      "\r\nTASK [Install packages] **************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;31mfailed: [db-1] (item=['python-setuptools', 'mysql-server', 'mysql-client', 'libmysqlclient-dev']) => {\"changed\": false, \"cmd\": \"apt-get install python-apt -y -q\", \"item\": [\"python-setuptools\", \"mysql-server\", \"mysql-client\", \"libmysqlclient-dev\"], \"msg\": \"E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)\\nE: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?\", \"rc\": 100, \"stderr\": \"E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)\\nE: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?\\n\", \"stderr_lines\": [\"E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)\", \"E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?\"], \"stdout\": \"\", \"stdout_lines\": []}\u001b[0m\r\n"
+    ],
+    [
+      0.005444,
+      "\tto retry, use: --limit @/Users/psuder/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts/playbook-1.retry\r\n"
+    ],
+    [
+      6.3e-05,
+      "\r\nPLAY RECAP ***************************************************************************************************\r\n"
+    ],
+    [
+      0.000244,
+      "\u001b[0;31mdb-1\u001b[0m                       : \u001b[0;32mok=4   \u001b[0m \u001b[0;33mchanged=2   \u001b[0m unreachable=0    \u001b[0;31mfailed=1   \u001b[0m\r\n"
+    ],
+    [
+      9.5e-05,
+      "\u001b[0;33mlocalhost\u001b[0m                  : \u001b[0;32mok=5   \u001b[0m \u001b[0;33mchanged=4   \u001b[0m unreachable=0    failed=0   \r\n"
+    ],
+    [
+      6.9e-05,
+      "\r\n"
+    ],
+    [
+      0.091035,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                             \r \r"
+    ],
+    [
+      8.4e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts\u0007"
+    ],
+    [
+      2.3e-05,
+      "\u001b]1;..ation/scripts\u0007"
+    ],
+    [
+      0.047875,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;31m➜  \u001b[36mscripts\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      7e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.5e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "ansible-playbook playbook-1.yml"
+    ],
+    [
+      0.251484,
+      "\u001b[?1l\u001b>\u001b[?2004l"
+    ],
+    [
+      5e-05,
+      "\r\r\n"
+    ],
+    [
+      0.000721,
+      "\u001b]2;ansible-playbook playbook-1.yml\u0007\u001b]1;ansible-playbook\u0007"
+    ],
+    [
+      1.595182,
+      "\u001b[1;35m [WARNING]: Unable to parse /etc/ansible/hosts as an inventory source\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      6.8e-05,
+      "\u001b[1;35m [WARNING]: No inventory was parsed, only implicit localhost is available\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      0.00282,
+      "\u001b[1;35m [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does\u001b[0m\r\n\u001b[1;35mnot match 'all'\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      0.878183,
+      "\r\nPLAY [localhost] *********************************************************************************************\r\n"
+    ],
+    [
+      0.021186,
+      "\r\nTASK [Add workshop key] **************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.005068,
+      "\r\nTASK [Create web instance] ***********************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.004182,
+      "\r\nTASK [Create DB instance] ************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [localhost]\u001b[0m\r\n"
+    ],
+    [
+      0.004331,
+      "\r\nTASK [Wait for SSH prompt (check if python is installed)] ****************************************************\r\n"
+    ],
+    [
+      1.493093,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': False, 'server': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', '"
+    ],
+    [
+      0.00011,
+      "name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'do"
+    ],
+    [
+      0.000108,
+      "main_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name':"
+    ],
+    [
+      4.2e-05,
+      " None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-M"
+    ],
+    [
+      0.000109,
+      "AC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08"
+    ],
+    [
+      3.1e-05,
+      "626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'openstack': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress':"
+    ],
+    [
+      3.5e-05,
+      " 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5"
+    ],
+    [
+      6.7e-05,
+      "a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b4"
+    ],
+    [
+      8.2e-05,
+      "0', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', '"
+    ],
+    [
+      2.4e-05,
+      "project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'proper"
+    ],
+    [
+      5.7e-05,
+      "ties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      1.46042,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': False, 'server': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'n"
+    ],
+    [
+      0.000373,
+      "ame': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'dom"
+    ],
+    [
+      0.000277,
+      "ain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': "
+    ],
+    [
+      0.000578,
+      "None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MA"
+    ],
+    [
+      0.00015,
+      "C:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b086"
+    ],
+    [
+      8.4e-05,
+      "26d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'openstack': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0"
+    ],
+    [
+      8.6e-05,
+      ", 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a1"
+    ],
+    [
+      8e-05,
+      "2-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40'"
+    ],
+    [
+      7.4e-05,
+      ", 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'pr"
+    ],
+    [
+      8e-05,
+      "oject_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properti"
+    ],
+    [
+      9.3e-05,
+      "es': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.030344,
+      "\r\nTASK [Add instances to inventory] ****************************************************************************\r\n"
+    ],
+    [
+      0.077634,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': False, 'server': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', '"
+    ],
+    [
+      6.3e-05,
+      "name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'do"
+    ],
+    [
+      0.000127,
+      "main_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name':"
+    ],
+    [
+      9.1e-05,
+      " None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-M"
+    ],
+    [
+      7.5e-05,
+      "AC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08"
+    ],
+    [
+      8.5e-05,
+      "626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'openstack': {'id': 'a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d', 'name': 'web-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'progress':"
+    ],
+    [
+      0.000352,
+      " 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:05:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5"
+    ],
+    [
+      5.5e-05,
+      "a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b4"
+    ],
+    [
+      0.000142,
+      "0', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', '"
+    ],
+    [
+      0.000192,
+      "project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.17', 'accessIPv6': '2001:41d0:601:2000::26c', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 4, 'addr': '54.37.130.17', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:83:83:36', 'version': 6, 'addr': '2001:41d0:601:2000::26c', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:24:8c:f1', 'version': 4, 'addr': '192.168.0.222', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:04:36Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.222', 'public_v4': '54.37.130.17', 'public_v6': '2001:41d0:601:2000::26c', 'status': 'ACTIVE', 'updated': '2018-02-16T12:05:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.17', 'proper"
+    ],
+    [
+      0.000411,
+      "ties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': 'a0535a48b2e421d4570db3c2a5babc800f2a4973bb5f37048cade589', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:05:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.009425,
+      "\u001b[0;33mchanged: [localhost] => (item={'changed': False, 'server': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0, 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'n"
+    ],
+    [
+      8.8e-05,
+      "ame': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'dom"
+    ],
+    [
+      0.000103,
+      "ain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': "
+    ],
+    [
+      9.4e-05,
+      "None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MA"
+    ],
+    [
+      8e-05,
+      "C:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properties': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b086"
+    ],
+    [
+      7.5e-05,
+      "26d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'openstack': {'id': '671efbf9-4e08-4350-8b4d-54b066e197d5', 'name': 'db-1', 'flavor': {'id': 'a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9', 'name': 's1-4'}, 'image': {'id': '00ca8728-bb95-44d5-820e-69725c8a6450', 'name': 'Ubuntu 16.04'}, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': 'nova', 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'volumes': [], 'has_config_drive': False, 'host_id': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'progress': 0"
+    ],
+    [
+      7.9e-05,
+      ", 'disk_config': 'MANUAL', 'power_state': 1, 'task_state': None, 'vm_state': 'active', 'launched_at': '2018-02-16T12:07:43.000000', 'terminated_at': None, 'security_groups': [{'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a1"
+    ],
+    [
+      6.5e-05,
+      "2-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}, {'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'name': 'default', 'security_group_rules': [{'id': '21f1f737-cd97-4133-b3bf-5033f6996b40'"
+    ],
+    [
+      8e-05,
+      ", 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'project_id': '', 'group': {}}, {'id': '639f5a12-c2ff-458b-a0d4-63607b97b2fe', 'direction': 'ingress', 'ethertype': 'IPv4', 'port_range_min': None, 'port_range_max': None, 'protocol': None, 'remote_ip_prefix': '0.0.0.0/0', 'security_group_id': 'a80bb7b0-13da-4a7e-902c-302c899d474a', 'remote_group_id': None, 'location': {'cloud': 'envvars', 'region_name': 'WAW1', 'zone': None, 'project': {'id': '84506b08626d4e03a581d170f3bc53d2', 'name': '6172977971516119', 'domain_id': None, 'domain_name': None}}, 'properties': {'group': {}}, 'tenant_id': '', 'pr"
+    ],
+    [
+      7.1e-05,
+      "oject_id': '', 'group': {}}], 'description': 'Default security group', 'properties': {}, 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'project_id': '84506b08626d4e03a581d170f3bc53d2'}], 'accessIPv4': '54.37.130.37', 'accessIPv6': '2001:41d0:601:2000::1b8', 'addresses': {'Ext-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 4, 'addr': '54.37.130.37', 'OS-EXT-IPS:type': 'fixed'}, {'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:34:19:f2', 'version': 6, 'addr': '2001:41d0:601:2000::1b8', 'OS-EXT-IPS:type': 'fixed'}], 'Private-Net': [{'OS-EXT-IPS-MAC:mac_addr': 'fa:16:3e:12:37:2f', 'version': 4, 'addr': '192.168.0.223', 'OS-EXT-IPS:type': 'fixed'}]}, 'adminPass': None, 'created': '2018-02-16T12:06:02Z', 'key_name': 'psuder_laptop', 'metadata': {}, 'networks': {}, 'private_v4': '192.168.0.223', 'public_v4': '54.37.130.37', 'public_v6': '2001:41d0:601:2000::1b8', 'status': 'ACTIVE', 'updated': '2018-02-16T12:07:43Z', 'user_id': '94ea91842b6648f491ad8b09af517141', 'interface_ip': '54.37.130.37', 'properti"
+    ],
+    [
+      7.9e-05,
+      "es': {'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'hostId': '3e14899b5d0be718e5d82d0e2b27d11efb1cf3357a41aaea59fc4392', 'config_drive': '', 'project_id': '84506b08626d4e03a581d170f3bc53d2', 'tenant_id': '84506b08626d4e03a581d170f3bc53d2', 'region': 'WAW1', 'cloud': 'envvars', 'az': 'nova', 'OS-EXT-STS:task_state': None, 'OS-EXT-STS:vm_state': 'active', 'OS-SRV-USG:launched_at': '2018-02-16T12:07:43.000000', 'OS-DCF:diskConfig': 'MANUAL', 'OS-EXT-STS:power_state': 1, 'OS-EXT-AZ:availability_zone': 'nova', 'OS-SRV-USG:terminated_at': None, 'os-extended-volumes:volumes_attached': []}, 'failed': False})\u001b[0m\r\n"
+    ],
+    [
+      0.013087,
+      "\r\nPLAY [db-1] **************************************************************************************************\r\n"
+    ],
+    [
+      0.006069,
+      "\r\nTASK [Gathering Facts] ***************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.008777,
+      "\r\nTASK [Set fact] **********************************************************************************************\r\n"
+    ],
+    [
+      0.0628,
+      "\u001b[0;32mok: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.008794,
+      "\r\nTASK [Configure second interface] ****************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007602,
+      "\r\nTASK [Enable second interface] *******************************************************************************\r\n"
+    ],
+    [
+      1.563156,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.006417,
+      "\r\nTASK [Install packages] **************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [db-1] => (item=['python-setuptools', 'mysql-server', 'mysql-client', 'libmysqlclient-dev'])\u001b[0m\r\n"
+    ],
+    [
+      0.008137,
+      "\r\nTASK [Install python packages] *******************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [db-1] => (item=mysql)\u001b[0m\r\n"
+    ],
+    [
+      0.007089,
+      "\r\nTASK [Modify MySQL configuration] ****************************************************************************\r\n"
+    ],
+    [
+      1.670098,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.009507,
+      "\r\nTASK [Restart MySQL service] *********************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007108,
+      "\r\nTASK [Create database] ***************************************************************************************\r\n"
+    ],
+    [
+      1.984926,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007613,
+      "\r\nTASK [Create database account] *******************************************************************************\r\n"
+    ],
+    [
+      1.702526,
+      "\u001b[0;33mchanged: [db-1]\u001b[0m\r\n"
+    ],
+    [
+      0.006697,
+      "\r\nPLAY [web-1] *************************************************************************************************\r\n"
+    ],
+    [
+      0.005082,
+      "\r\nTASK [Gathering Facts] ***************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007196,
+      "\r\nTASK [Set fact] **********************************************************************************************\r\n"
+    ],
+    [
+      0.065864,
+      "\u001b[0;32mok: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.00714,
+      "\r\nTASK [Configure second interface] ****************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.009111,
+      "\r\nTASK [Enable second interface] *******************************************************************************\r\n"
+    ],
+    [
+      1.693164,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007895,
+      "\r\nTASK [Install packages] **************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1] => (item=['apt-transport-https', 'ca-certificates', 'curl', 'gnupg2', 'software-properties-common', 'mysql-client', 'ccze'])\u001b[0m\r\n"
+    ],
+    [
+      0.01034,
+      "\r\nTASK [Install python packages] *******************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;32mok: [web-1] => (item=setuptools)\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1] => (item=docker)\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1] => (item=docker-compose)\u001b[0m\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1] => (item=pyOpenSSL)\u001b[0m\r\n"
+    ],
+    [
+      0.010462,
+      "\r\nTASK [Add Docker GPG key] ************************************************************************************\r\n"
+    ],
+    [
+      2.173633,
+      "\u001b[1;35m [WARNING]: Consider using get_url or uri module rather than running curl\u001b[0m\r\n\u001b[1;35m\u001b[0m\r\n"
+    ],
+    [
+      3.3e-05,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.006192,
+      "\r\nTASK [Add APT repository] ************************************************************************************\r\n"
+    ],
+    [
+      2.28624,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007127,
+      "\r\nTASK [Install Docker] ****************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.006953,
+      "\r\nTASK [Check Docker service] **********************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.008177,
+      "\r\nTASK [Create directory for SSL] ******************************************************************************\r\n"
+    ],
+    [
+      1.556633,
+      "\u001b[0;32mok: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007761,
+      "\r\nTASK [Generate a private key] ********************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.008349,
+      "\r\nTASK [Generate a CSR for certificate] ************************************************************************\r\n"
+    ],
+    [
+      1.826934,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.00789,
+      "\r\nTASK [Generate a self signed certificate] ********************************************************************\r\n"
+    ],
+    [
+      1.811479,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.00817,
+      "\r\nTASK [Create directory for web server configuration] *********************************************************\r\n"
+    ],
+    [
+      1.582492,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.005924,
+      "\r\nTASK [Setup Nginx configuration] *****************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.00813,
+      "\r\nTASK [Setup Wordpress Nginx configuration] *******************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007834,
+      "\r\nTASK [Setup application] *************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.007536,
+      "\r\nTASK [Start application] *************************************************************************************\r\n"
+    ],
+    [
+      2.3,
+      "\u001b[0;33mchanged: [web-1]\u001b[0m\r\n"
+    ],
+    [
+      0.001706,
+      "\r\nPLAY RECAP ***************************************************************************************************\r\n"
+    ],
+    [
+      3e-05,
+      "\u001b[0;33mdb-1\u001b[0m                       : \u001b[0;32mok=10  \u001b[0m \u001b[0;33mchanged=7   \u001b[0m unreachable=0    failed=0   \r\n"
+    ],
+    [
+      6e-05,
+      "\u001b[0;33mlocalhost\u001b[0m                  : \u001b[0;32mok=5   \u001b[0m \u001b[0;33mchanged=2   \u001b[0m unreachable=0    failed=0   \r\n"
+    ],
+    [
+      6.8e-05,
+      "\u001b[0;33mweb-1\u001b[0m                      : \u001b[0;32mok=19  \u001b[0m \u001b[0;33mchanged=16  \u001b[0m unreachable=0    failed=0   \r\n"
+    ],
+    [
+      4.2e-05,
+      "\r\n"
+    ],
+    [
+      0.104045,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                             \r \r\u001b]2;psuder@LAPTOP910323: ~/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts\u0007"
+    ],
+    [
+      2.6e-05,
+      "\u001b]1;..ation/scripts\u0007"
+    ],
+    [
+      0.152842,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mscripts\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      6.3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      6.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name,status,networks\u001b[27m"
+    ],
+    [
+      0.443949,
+      "\u001b[39D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m,\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27mu\u001b[27ms\u001b[27m,\u001b[27mn\u001b[27me\u001b[27mt\u001b[27mw\u001b[27mo\u001b[27mr\u001b[27mk\u001b[27ms"
+    ],
+    [
+      8.3e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      0.000144,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.005113,
+      "\u001b]2;nova list --fields name,status,networks\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+-------+--------+--------------------------------------------------------------------------+\r\n| ID                                   | Name  | Status | Networks                                                                 |\r\n+--------------------------------------+-------+--------+--------------------------------------------------------------------------+\r\n| 671efbf9-4e08-4350-8b4d-54b066e197d5 | db-1  | ACTIVE | Ext-Net=54.37.130.37, 2001:41d0:601:2000::1b8; Private-Net=192.168.0.223 |\r\n| a3bcbad9-2a3b-430d-a3b1-cd4cede8ac8d | web-1 | ACTIVE | Ext-Net=54.37.130.17, 2001:41d0:601:2000::26c; Private-Net=192.168.0.222 |\r\n+--------------------------------------+-------+--------+--------------------------------------------------------------------------+\r\n"
+    ],
+    [
+      0.077181,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                             \r \r"
+    ],
+    [
+      7.6e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts\u0007"
+    ],
+    [
+      0.000102,
+      "\u001b]1;..ation/scripts\u0007"
+    ],
+    [
+      0.045827,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mscripts\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      3.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mssh ubuntu@54.37.130.17\u001b[27m"
+    ],
+    [
+      0.343491,
+      "\u001b[23D\u001b[27ms\u001b[27ms\u001b[27mh\u001b[27m \u001b[27mu\u001b[27mb\u001b[27mu\u001b[27mn\u001b[27mt\u001b[27mu\u001b[27m@\u001b[27m5\u001b[27m4\u001b[27m.\u001b[27m3\u001b[27m7\u001b[27m.\u001b[27m1\u001b[27m3\u001b[27m0\u001b[27m.\u001b[27m1\u001b[27m7"
+    ],
+    [
+      3.9e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.006253,
+      "\u001b]2;ssh ubuntu@54.37.130.17\u0007\u001b]1;ubuntu@54.37.130.17\u0007"
+    ],
+    [
+      1.005036,
+      "Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-108-generic x86_64)"
+    ],
+    [
+      0.001129,
+      "\r\n\r\n * Documentation:  https://help.ubuntu.com\r\n * Management:     https://landscape.canonical.com\r\n * Support:        https://ubuntu.com/advantage\r\n"
+    ],
+    [
+      0.067346,
+      "\r\n  Get cloud support with Ubuntu Advantage Cloud Guest:\r\n    http://www.ubuntu.com/business/services/cloud\r\n\r\n66 packages can be updated.\r\n36 updates are security updates.\r\n\r\n\r\n*** System restart required ***\r\nLast login: Fri Feb 16 12:29:15 2018 from 109.190.254.6\r\r\n_____________________________________________________________________\r\nWARNING! Your environment specifies an invalid locale.\r\n The unknown environment variables are:\r\n   LC_CTYPE=pl_PL.UTF-8 LC_ALL=\r\n This can affect your user experience significantly, including the\r\n ability to manage packages. You may install the locales by running:\r\n\r\n   sudo apt-get install language-pack-pl\r\n     or\r\n   sudo locale-gen pl_PL.UTF-8\r\n\r\nTo see all available language packs, run:\r\n   apt-cache search \"^language-pack-[a-z][a-z]$\"\r\nTo disable this message for all users, run:\r\n   sudo touch /var/lib/cloud/instance/locale-check.skip\r\n_____________________________________________________________________\r\n\r\n"
+    ],
+    [
+      0.003533,
+      "\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "sudo docker ps"
+    ],
+    [
+      0.366601,
+      "\r\n"
+    ],
+    [
+      0.022996,
+      "CONTAINER ID        IMAGE               COMMAND        "
+    ],
+    [
+      0.000153,
+      "          "
+    ],
+    [
+      0.045058,
+      "CREATED             STATUS              PORTS                                      NAMES\r\naa18740a916e        nginx               \"nginx -g 'daemon of…\"   11 minutes ago      Up 11 minutes       0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp   root_web_1\r\n73e4c751825b        wordpress:fpm       \"docker-entrypoint.s…\"   11 minutes ago      Up 11 minutes       9000/tcp                                   root_wordpress_1\r\n\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "mysql -u db_user -h 192.168.0.223 -p"
+    ],
+    [
+      0.509598,
+      "\r\n"
+    ],
+    [
+      0.002183,
+      "Enter password: "
+    ],
+    [
+      2.3,
+      "\r\n"
+    ],
+    [
+      0.00101,
+      "Welcome to the MySQL monitor.  Commands end with ; or \\g.\r\n"
+    ],
+    [
+      0.000275,
+      "Your MySQL connection id is 73"
+    ],
+    [
+      0.000808,
+      "\r\nServer version: 5.7.21-0ubuntu0.16.04.1 (Ubuntu)\r\n\r\n"
+    ],
+    [
+      0.000133,
+      "Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.\r\n\r\n"
+    ],
+    [
+      0.066518,
+      "Oracle is a registered trademark of Oracle Corporation and/or its\r\naffiliates. Other names may be trademarks of their respective\r\nowners.\r\n\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\r\nmysql> "
+    ],
+    [
+      2.3,
+      "show databases;"
+    ],
+    [
+      0.798358,
+      "\r\n"
+    ],
+    [
+      0.001429,
+      "+--------------------+\r\n| Database           |\r\n+--------------------+\r\n| information_schema |\r\n| db_wordpress       |\r\n+--------------------+\r\n2 rows in set (0.00 sec)\r\n\r\nmysql> "
+    ],
+    [
+      2.3,
+      "use db_wordpress;"
+    ],
+    [
+      0.400266,
+      "\r\n"
+    ],
+    [
+      0.003408,
+      "Reading table information for completion of table and column names\r\nYou can turn off this feature to get a quicker startup with -A\r\n\r\n"
+    ],
+    [
+      0.004583,
+      "Database changed\r\nmysql> "
+    ],
+    [
+      2.3,
+      "show tables;"
+    ],
+    [
+      0.322759,
+      "\r\n"
+    ],
+    [
+      0.000946,
+      "+------------------------+\r\n| Tables_in_db_wordpress |\r\n+------------------------+\r\n| wp_commentmeta         |\r\n| wp_comments            |\r\n| wp_links               |\r\n| wp_options             |\r\n| wp_postmeta            |\r\n| wp_posts               |\r\n| wp_term_relationships  |\r\n| wp_term_taxonomy       |\r\n| wp_termmeta            |\r\n| wp_terms               |\r\n| wp_usermeta            |\r\n| wp_users               |\r\n+------------------------+\r\n12 rows in set (0.00 sec)\r\n\r\nmysql> "
+    ],
+    [
+      2.3,
+      "^DBye\r\n\u001b]0;ubuntu@web-1: ~\u0007\u001b[01;32mubuntu@web-1\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      0.93734,
+      "logout\r\n"
+    ],
+    [
+      0.004423,
+      "Connection to 54.37.130.17 closed.\r\r\n"
+    ],
+    [
+      0.002597,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                             \r \r"
+    ],
+    [
+      7.9e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~/Spaces/Ovh/ovh-cloud-tour-2018-presentation/scripts\u0007"
+    ],
+    [
+      2.5e-05,
+      "\u001b]1;..ation/scripts\u0007"
+    ],
+    [
+      0.042281,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36mscripts\u001b[00m \u001b[01;34mgit:(\u001b[31mmaster\u001b[34m) \u001b[33m✗\u001b[00m \u001b[K"
+    ],
+    [
+      3.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      6.3e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      0.756943,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

@@ -1,0 +1,261 @@
+---
+
+- hosts: localhost
+  gather_facts: false
+  vars_files:
+  - "vars/playbook_settings.yml"
+
+  tasks:
+  - name: Add workshop key
+    os_keypair:
+      name: psuder_laptop
+      public_key_file: "{{ lookup('env','HOME') }}/.ssh/id_rsa.pub"
+
+  - name: Create web instance
+    os_server:
+      state: present
+      name: "web-1"
+      image: "{{ image_name }}"
+      key_name: psuder_laptop
+      wait: yes
+      flavor: "{{ flavor_name }}"
+      nics:
+      - net-name: "{{ first_network_name }}"
+      - net-name: "{{ second_network_name }}"
+      userdata: |
+        #!/usr/bin/env bash
+        sudo apt update
+        sudo apt install -y build-essential python python-dev python-pip python-setuptools
+    register: web
+
+  - name: Create DB instance
+    os_server:
+      state: present
+      name: "db-1"
+      image: "{{ image_name }}"
+      key_name: psuder_laptop
+      wait: yes
+      flavor: "{{ flavor_name }}"
+      nics:
+      - net-name: "{{ first_network_name }}"
+      - net-name: "{{ second_network_name }}"
+      userdata: |
+        #!/usr/bin/env bash
+        sudo apt update
+        sudo apt install -y build-essential python python-dev python-pip python-setuptools
+    register: db
+
+  - name: Wait for SSH prompt (check if python is installed)
+    command: >
+      ssh -oBatchMode=yes -oStrictHostKeyChecking=no {{ user_name }}@{{ item.server.public_v4 }} python
+    register: result
+    until: result|success
+    retries: 5
+    delay: 10
+    with_items:
+    - "{{ web }}"
+    - "{{ db }}"
+
+  - name: Add instances to inventory
+    add_host:
+      name: "{{ item.server.name }}"
+      groups: servers
+      ansible_ssh_host: "{{ item.server.public_v4 }}"
+      first_interface_ip: "{{ item.server.public_v4 }}"
+      second_interface_ip: "{{ item.server.private_v4 }}"
+    with_items:
+    - "{{ web }}"
+    - "{{ db }}"
+
+- hosts: "db-1"
+  remote_user: "ubuntu"
+  vars_files:
+  - "vars/playbook_settings.yml"
+
+  tasks:
+  - name: Set fact
+    set_fact:
+      second_interface_name: "{{ second_interface_name }}"
+
+  - name: Configure second interface
+    template:
+      src: templates/60-second-interface.cfg.j2
+      dest: /etc/network/interfaces.d/60-second-interface.cfg
+    become: true
+    become_user: root
+
+  - name: Enable second interface
+    command: "ifup {{ second_interface_name}}"
+    become: true
+    become_user: root
+
+  - name: Install packages
+    apt:
+      name: "{{ item }}"
+    with_items: "{{ db_packages }}"
+    become: true
+    become_user: root
+
+  - name: Install python packages
+    pip:
+      name: "{{ item }}"
+    with_items: "{{ db_pip_packages }}"
+    become: true
+    become_user: root
+
+  - name: Modify MySQL configuration
+    lineinfile:
+      dest: /etc/mysql/mysql.conf.d/mysqld.cnf
+      regexp: "^bind-address"
+      line: "bind-address = {{ second_interface_ip }}"
+    become: true
+    become_user: root
+
+  - name: Restart MySQL service
+    service:
+      name: mysql
+      state: restarted
+    become: true
+    become_user: root
+
+  - name: Create database
+    mysql_db:
+      name: "{{ mysql_db_name }}"
+    become: true
+    become_user: root
+
+  - name: Create database account
+    mysql_user:
+      name: "{{ mysql_db_user }}"
+      password: "{{ mysql_db_password }}"
+      host: "%"
+      priv: "{{ mysql_db_name }}.*:ALL"
+    become: true
+    become_user: root
+
+- hosts: "web-1"
+  remote_user: "ubuntu"
+  vars_files:
+  - "vars/playbook_settings.yml"
+
+  tasks:
+  - name: Set fact
+    set_fact:
+      second_interface_name: "{{ second_interface_name }}"
+
+  - name: Configure second interface
+    template:
+      src: templates/60-second-interface.cfg.j2
+      dest: /etc/network/interfaces.d/60-second-interface.cfg
+    become: true
+    become_user: root
+
+  - name: Enable second interface
+    command: "ifup {{ second_interface_name}}"
+    become: true
+    become_user: root
+
+  - name: Install packages
+    apt:
+      name: "{{ item }}"
+      state: present
+    with_items: "{{ web_packages }}"
+    become: true
+    become_user: root
+
+  - name: Install python packages
+    pip:
+      name: "{{ item }}"
+    with_items: "{{ web_pip_packages }}"
+    become: true
+    become_user: root
+
+  - name: Add Docker GPG key
+    shell: |
+      curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo ${ID})/gpg | sudo apt-key add -
+
+  - name: Add APT repository
+    shell: |
+      source /etc/os-release
+      sudo add-apt-repository \
+         "deb [arch=amd64] https://download.docker.com/linux/$(. /etc/os-release; echo ${ID}) \
+         $(lsb_release -cs) \
+         stable"
+
+  - name: Install Docker
+    apt:
+      name: docker-ce
+      update_cache: yes
+    become: true
+    become_user: root
+
+  - name: Check Docker service
+    service:
+      name: docker
+      state: restarted
+    become: true
+    become_user: root
+
+  - name: Create directory for SSL
+    file:
+      path: /etc/ssl
+      state: directory
+    become: true
+    become_user: root
+
+  - name: Generate a private key
+    openssl_privatekey:
+      path: /etc/ssl/www.example.com.pem
+    become: true
+    become_user: root
+
+  - name: Generate a CSR for certificate
+    openssl_csr:
+      path: /etc/ssl/www.example.com.csr
+      privatekey_path: /etc/ssl/www.example.com.pem
+      common_name: www.example.com
+    become: true
+    become_user: root
+
+  - name: Generate a self signed certificate
+    openssl_certificate:
+      path: /etc/ssl/www.example.com.crt
+      privatekey_path: /etc/ssl/www.example.com.pem
+      csr_path: /etc/ssl/www.example.com.csr
+      provider: selfsigned
+    become: true
+    become_user: root
+
+  - name: Create directory for web server configuration
+    file:
+      path: /etc/nginx/conf.d
+      state: directory
+    become: true
+    become_user: root
+
+  - name: Setup Nginx configuration
+    template:
+      src: templates/nginx.conf.j2
+      dest: /etc/nginx/nginx.conf
+    become: true
+    become_user: root
+
+  - name: Setup Wordpress Nginx configuration
+    template:
+      src: templates/wordpress.conf.j2
+      dest: /etc/nginx/conf.d/wordpress.conf
+    become: true
+    become_user: root
+
+  - name: Setup application
+    template:
+      src: templates/docker-compose.yml.j2
+      dest: /root/docker-compose.yml
+    become: true
+    become_user: root
+
+  - name: Start application
+    docker_service:
+      project_src: /root
+    become: true
+    become_user: root

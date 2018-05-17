@@ -1,0 +1,646 @@
+{
+  "version": 1,
+  "width": 99,
+  "height": 29,
+  "duration": 71.911716,
+  "command": null,
+  "title": null,
+  "env": {
+    "TERM": "xterm-256color",
+    "SHELL": "/bin/zsh"
+  },
+  "stdout": [
+    [
+      0.612974,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      4.5e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.020851,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      0.000199,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000125,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name,status\u001b[27m"
+    ],
+    [
+      0.80689,
+      "\u001b[30D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m,\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27mu\u001b[27ms"
+    ],
+    [
+      5.6e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001216,
+      "\u001b]2;nova list --fields name,status\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+-------+--------+\r\n| ID                                   | Name  | Status |\r\n+--------------------------------------+-------+--------+\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1 | ACTIVE |\r\n+--------------------------------------+-------+--------+\r\n"
+    ],
+    [
+      0.060521,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000133,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.6e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.039456,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      4.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      9.6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova keypair-list\u001b[27m"
+    ],
+    [
+      0.386731,
+      "\u001b[17D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27mk\u001b[27me\u001b[27my\u001b[27mp\u001b[27ma\u001b[27mi\u001b[27mr\u001b[27m-\u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[?1l\u001b>"
+    ],
+    [
+      4.7e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.004462,
+      "\u001b]2;nova keypair-list\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+------+-------------+\r\n| Name | Fingerprint |\r\n+------+-------------+\r\n+------+-------------+\r\n"
+    ],
+    [
+      0.067152,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      3.7e-05,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.012703,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      2.8e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova keypair-add --pub-key ~/.ssh/id_rsa.pub psuder_desktop\u001b[27m"
+    ],
+    [
+      0.825291,
+      "\u001b[59D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27mk\u001b[27me\u001b[27my\u001b[27mp\u001b[27ma\u001b[27mi\u001b[27mr\u001b[27m-\u001b[27ma\u001b[27md\u001b[27md\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mp\u001b[27mu\u001b[27mb\u001b[27m-\u001b[27mk\u001b[27me\u001b[27my\u001b[27m \u001b[27m~\u001b[27m/\u001b[27m.\u001b[27ms\u001b[27ms\u001b[27mh\u001b[27m/\u001b[27mi\u001b[27md\u001b[27m_\u001b[27mr\u001b[27ms\u001b[27ma\u001b[27m.\u001b[27mp\u001b[27mu\u001b[27mb\u001b[27m \u001b[27mp\u001b[27ms\u001b[27mu\u001b[27md\u001b[27me\u001b[27mr\u001b[27m_\u001b[27md\u001b[27me\u001b[27ms\u001b[27mk\u001b[27mt\u001b[27mo\u001b[27mp"
+    ],
+    [
+      4.7e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      8.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001022,
+      "\u001b]2;nova keypair-add --pub-key ~/.ssh/id_rsa.pub psuder_desktop\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.175762,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000135,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      7.8e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.012896,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      6.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      6e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova keypair-list\u001b[27m"
+    ],
+    [
+      0.375801,
+      "\u001b[17D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27mk\u001b[27me\u001b[27my\u001b[27mp\u001b[27ma\u001b[27mi\u001b[27mr\u001b[27m-\u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt"
+    ],
+    [
+      3.2e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001801,
+      "\u001b]2;nova keypair-list\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+----------------+-------------------------------------------------+\r\n| Name           | Fingerprint                                     |\r\n+----------------+-------------------------------------------------+\r\n| psuder_desktop | 08:85:c7:a3:38:88:bc:e8:22:f8:03:c6:21:52:29:69 |\r\n+----------------+-------------------------------------------------+\r\n"
+    ],
+    [
+      0.067425,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000185,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.011773,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      0.000151,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.8e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova boot --flavor s1-4 --image \"Ubuntu 16.04\" --nic net-name=Ext-Net --key-name psuder_deskto\u001b[7mp\u001b[7m testing\u001b[27m\u001b[K"
+    ],
+    [
+      2.3,
+      "\u001b[A\b\b\b\b\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27mb\u001b[27mo\u001b[27mo\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27ml\u001b[27ma\u001b[27mv\u001b[27mo\u001b[27mr\u001b[27m \u001b[27ms\u001b[27m1\u001b[27m-\u001b[27m4\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mi\u001b[27mm\u001b[27ma\u001b[27mg\u001b[27me\u001b[27m \u001b[27m\"\u001b[27mU\u001b[27mb\u001b[27mu\u001b[27mn\u001b[27mt\u001b[27mu\u001b[27m \u001b[27m1\u001b[27m6\u001b[27m.\u001b[27m0\u001b[27m4\u001b[27m\"\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mn\u001b[27mi\u001b[27mc\u001b[27m \u001b[27mn\u001b[27me\u001b[27mt\u001b[27m-\u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m=\u001b[27mE\u001b[27mx\u001b[27mt\u001b[27m-\u001b[27mN\u001b[27me\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mk\u001b[27me\u001b[27my\u001b[27m-\u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m \u001b[27mp\u001b[27ms\u001b[27mu\u001b[27md\u001b[27me\u001b[27mr\u001b[27m_\u001b[27md\u001b[27me\u001b[27ms\u001b[27mk\u001b[27mt\u001b[27mop\u001b[27m \u001b[27mt\u001b[27me\u001b[27ms\u001b[27mt\u001b[27mi\u001b[27mn\u001b[27mg"
+    ],
+    [
+      3.4e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2.3e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001663,
+      "\u001b]2;nova boot --flavor s1-4 --image \"Ubuntu 16.04\" --nic net-name=Ext-Net   \u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+-----------------------------------------------------+\r\n| Property                             | Value                                               |\r\n+--------------------------------------+-----------------------------------------------------+\r\n| OS-DCF:diskConfig                    | MANUAL                                              |\r\n| OS-EXT-AZ:availability_zone          |                                                     |\r\n| OS-EXT-STS:power_state               | 0                                                   |\r\n| OS-EXT-STS:task_state                | scheduling                                          |\r\n| OS-EXT-STS:vm_state                  | building                                            |\r\n| OS-SRV-USG:launched_at               | -                                                   |\r\n| OS-SRV-USG:terminated_at             | -                                                   |\r\n| accessIPv4                           |                        "
+    ],
+    [
+      9.2e-05,
+      "                             |\r\n| accessIPv6                           |                                                     |\r\n| adminPass                            | 4Mhaf5VMawAC                                        |\r\n| config_drive                         |                                                     |\r\n| created                              | 2018-02-13T10:58:57Z                                |\r\n| flavor                               | s1-4 (a47516ca-ebf5-4f9c-8d3d-d6ad3c6301a9)         |\r\n| hostId                               |                                                     |\r\n| id                                   | c923e8f2-e143-4dab-84e6-e2281593058a                |\r\n| image                                | Ubuntu 16.04 (00ca8728-bb95-44d5-820e-69725c8a6450) |\r\n| key_name                             | psuder_desktop                                      |\r\n| metadata                             | {}                                                  |\r\n| name                          "
+    ],
+    [
+      0.000232,
+      "       | testing                                             |\r\n| os-extended-volumes:volumes_attached | []                                                  |\r\n| progress                             | 0                                                   |\r\n| security_groups                      | default                                             |\r\n| status                               | BUILD                                               |\r\n| tenant_id                            | 84506b08626d4e03a581d170f3bc53d2                    |\r\n| updated                              | 2018-02-13T10:58:57Z                                |\r\n| user_id                              | 94ea91842b6648f491ad8b09af517141                    |\r\n+--------------------------------------+-----------------------------------------------------+\r\n"
+    ],
+    [
+      0.063479,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000298,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      5.1e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.015654,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      6.5e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.1e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name,status\u001b[27m"
+    ],
+    [
+      0.814257,
+      "\u001b[30D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m,\u001b[27ms\u001b[27mt\u001b[27ma\u001b[27mt\u001b[27mu\u001b[27ms"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.002026,
+      "\u001b]2;nova list --fields name,status\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+---------+--------+\r\n| ID                                   | Name    | Status |\r\n+--------------------------------------+---------+--------+\r\n| c923e8f2-e143-4dab-84e6-e2281593058a | testing | BUILD  |\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1   | ACTIVE |\r\n+--------------------------------------+---------+--------+\r\n"
+    ],
+    [
+      0.061349,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000101,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      7.4e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.013421,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      2.9e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "nova list --fields name,status"
+    ],
+    [
+      0.254451,
+      "\u001b[?1l\u001b>\u001b[?2004l"
+    ],
+    [
+      3.8e-05,
+      "\r\r\n"
+    ],
+    [
+      0.000698,
+      "\u001b]2;nova list --fields name,status\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+---------+--------+\r\n| ID                                   | Name    | Status |\r\n+--------------------------------------+---------+--------+\r\n| c923e8f2-e143-4dab-84e6-e2281593058a | testing | ACTIVE |\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1   | ACTIVE |\r\n+--------------------------------------+---------+--------+\r\n"
+    ],
+    [
+      0.062708,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000227,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.6e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.042115,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      5.1e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      0.000192,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name,networks\u001b[27m"
+    ],
+    [
+      0.350865,
+      "\u001b[32D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[27m,\u001b[27mn\u001b[27me\u001b[27mt\u001b[27mw\u001b[27mo\u001b[27mr\u001b[27mk\u001b[27ms"
+    ],
+    [
+      2.9e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      2e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.002043,
+      "\u001b]2;nova list --fields name,networks\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+---------+-----------------------------------------------+\r\n| ID                                   | Name    | Networks                                      |\r\n+--------------------------------------+---------+-----------------------------------------------+\r\n| c923e8f2-e143-4dab-84e6-e2281593058a | testing | Ext-Net=54.37.131.86, 2001:41d0:601:2000::225 |\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1   | Ext-Net=54.38.136.26, 2001:41d0:601:2000::26c |\r\n+--------------------------------------+---------+-----------------------------------------------+\r\n"
+    ],
+    [
+      0.058999,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000186,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.4e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.013511,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      3.4e-05,
+      "\u001b[?1h\u001b=\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mssh ubuntu@54.37.131.86\u001b[27m"
+    ],
+    [
+      0.454713,
+      "\u001b[23D\u001b[27ms\u001b[27ms\u001b[27mh\u001b[27m \u001b[27mu\u001b[27mb\u001b[27mu\u001b[27mn\u001b[27mt\u001b[27mu\u001b[27m@\u001b[27m5\u001b[27m4\u001b[27m.\u001b[27m3\u001b[27m7\u001b[27m.\u001b[27m1\u001b[27m3\u001b[27m1\u001b[27m.\u001b[27m8\u001b[27m6"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.001026,
+      "\u001b]2;ssh ubuntu@54.37.131.86\u0007\u001b]1;ubuntu@54.37.131.86\u0007"
+    ],
+    [
+      0.328344,
+      "The authenticity of host '54.37.131.86 (54.37.131.86)' can't be established.\r\nECDSA key fingerprint is SHA256:IdivJ/FOMgdiWoPlJxFOFg/ncd5xQ8f+ATSeEEE4id0.\r\nAre you sure you want to continue connecting (yes/no)? "
+    ],
+    [
+      0.976836,
+      "y"
+    ],
+    [
+      0.051969,
+      "e"
+    ],
+    [
+      0.177489,
+      "s"
+    ],
+    [
+      0.556845,
+      "\r\n"
+    ],
+    [
+      0.001943,
+      "Warning: Permanently added '54.37.131.86' (ECDSA) to the list of known hosts.\r\r\n"
+    ],
+    [
+      0.721429,
+      "Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-108-generic x86_64)\r\n\r\n * Documentation:  https://help.ubuntu.com\r\n * Management:     https://landscape.canonical.com\r\n"
+    ],
+    [
+      0.0004,
+      " * Support:        https://ubuntu.com/advantage\r\n"
+    ],
+    [
+      0.062712,
+      "\r\n  Get cloud support with Ubuntu Advantage Cloud Guest:\r\n    http://www.ubuntu.com/business/services/cloud\r\n\r\n0 packages can be updated.\r\n0 updates are security updates.\r\n\r\n\r\n\r\nThe programs included with the Ubuntu system are free software;\r\nthe exact distribution terms for each program are described in the\r\nindividual files in /usr/share/doc/*/copyright.\r\n\r\nUbuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by\r\napplicable law.\r\n\r\nTo run a command as administrator (user \"root\"), use \"sudo <command>\".\r\nSee \"man sudo_root\" for details.\r\n\r\n"
+    ],
+    [
+      0.014569,
+      "_____________________________________________________________________"
+    ],
+    [
+      0.002381,
+      "\r\nWARNING! Your environment specifies an invalid locale.\r\n The unknown environment variables are:\r\n   LC_CTYPE=pl_PL.UTF-8 LC_ALL=\r\n"
+    ],
+    [
+      0.000158,
+      " This can affect your user experience significantly, including the\r\n ability to manage packages. You may install the locales by running:\r\n\r\n"
+    ],
+    [
+      0.051407,
+      "   sudo apt-get install language-pack-pl\r\n     or\r\n   sudo locale-gen pl_PL.UTF-8\r\n\r\nTo see all available language packs, run:\r\n   apt-cache search \"^language-pack-[a-z][a-z]$\"\r\nTo disable this message for all users, run:\r\n   sudo touch /var/lib/cloud/instance/locale-check.skip\r\n_____________________________________________________________________\r\n\r\n"
+    ],
+    [
+      0.019638,
+      "\u001b]0;ubuntu@testing: ~\u0007\u001b[01;32mubuntu@testing\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "upt"
+    ],
+    [
+      0.000416,
+      "ime"
+    ],
+    [
+      0.303119,
+      "\r\n"
+    ],
+    [
+      0.003738,
+      " 11:00:47 up 1 min,  1 user,  load average: 0.12, 0.05, 0.02\r\n"
+    ],
+    [
+      0.000648,
+      "\u001b]0;ubuntu@testing: ~\u0007\u001b[01;32mubuntu@testing\u001b[00m:\u001b[01;34m~\u001b[00m$ "
+    ],
+    [
+      2.3,
+      "logout\r\n"
+    ],
+    [
+      0.003383,
+      "Connection to 54.37.131.86 closed.\r\r\n"
+    ],
+    [
+      0.002293,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000151,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.4e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.013431,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      3e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      4.2e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name\u001b[27m"
+    ],
+    [
+      0.313714,
+      "\u001b[23D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me\u001b[?1l\u001b>"
+    ],
+    [
+      3.2e-05,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.000626,
+      "\u001b]2;nova list --fields name\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+---------+\r\n| ID                                   | Name    |\r\n+--------------------------------------+---------+\r\n| c923e8f2-e143-4dab-84e6-e2281593058a | testing |\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1   |\r\n+--------------------------------------+---------+\r\n"
+    ],
+    [
+      0.066867,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000134,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.6e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.047893,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      7.4e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      5.7e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova delete testing\u001b[27m"
+    ],
+    [
+      0.348774,
+      "\u001b[19D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27md\u001b[27me\u001b[27ml\u001b[27me\u001b[27mt\u001b[27me\u001b[27m \u001b[27mt\u001b[27me\u001b[27ms\u001b[27mt\u001b[27mi\u001b[27mn\u001b[27mg"
+    ],
+    [
+      5.1e-05,
+      "\u001b[?1l\u001b>"
+    ],
+    [
+      0.000313,
+      "\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.000885,
+      "\u001b]2;nova delete testing\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "Request to delete server testing has been accepted.\r\n"
+    ],
+    [
+      0.068133,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000156,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007"
+    ],
+    [
+      2.6e-05,
+      "\u001b]1;~\u0007"
+    ],
+    [
+      0.013232,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      2.6e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.2e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.3,
+      "\u001b[7mnova list --fields name\u001b[27m"
+    ],
+    [
+      0.297197,
+      "\u001b[23D\u001b[27mn\u001b[27mo\u001b[27mv\u001b[27ma\u001b[27m \u001b[27ml\u001b[27mi\u001b[27ms\u001b[27mt\u001b[27m \u001b[27m-\u001b[27m-\u001b[27mf\u001b[27mi\u001b[27me\u001b[27ml\u001b[27md\u001b[27ms\u001b[27m \u001b[27mn\u001b[27ma\u001b[27mm\u001b[27me"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1l\u001b>\u001b[?2004l\r\r\n"
+    ],
+    [
+      0.00086,
+      "\u001b]2;nova list --fields name\u0007\u001b]1;nova\u0007"
+    ],
+    [
+      2.3,
+      "+--------------------------------------+-------+\r\n| ID                                   | Name  |\r\n+--------------------------------------+-------+\r\n| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1 |\r\n+--------------------------------------+-------+\r\n"
+    ],
+    [
+      0.060767,
+      "\u001b[1m\u001b[7m%\u001b[27m\u001b[1m\u001b[0m                                                                                                  \r \r"
+    ],
+    [
+      0.000137,
+      "\u001b]2;psuder@LAPTOP910323: ~\u0007\u001b]1;~\u0007"
+    ],
+    [
+      0.012581,
+      "\r\u001b[0m\u001b[27m\u001b[24m\u001b[J\u001b[01;32m➜  \u001b[36m~\u001b[00m \u001b[K"
+    ],
+    [
+      4.8e-05,
+      "\u001b[?1h\u001b="
+    ],
+    [
+      3.9e-05,
+      "\u001b[?2004h"
+    ],
+    [
+      2.161102,
+      "\u001b[?2004l\r\r\n"
+    ]
+  ]
+}

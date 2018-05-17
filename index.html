@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>O OpenStacku z punktu widzenia dewelopera i operatora</title>
+
+    <meta name="description" content="Presentation for SODO MeetUp in Wrocław">
+    <meta name="author" content="Paweł Suder">
+
+    <meta name="apple-mobile-web-app-capable"
+          content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,
+                   maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css"
+          href="css/reveal.css" />
+    <link rel="stylesheet" type="text/css"
+          href="css/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" type="text/css"
+          href="lib/css/zenburn.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css"
+          href="css/asciinema-player.css" />
+    <link rel="stylesheet" type="text/css"
+          href="style.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <h2>z punktu widzenia</h2>
+            <h2>dewelopera i operatora</h2>
+            <hr/>
+            <p>Paweł Suder</p>
+            <p>17.05.2018</p>
+            <p><a href="https://pa.suder.app">GitHub</a></p>
+            <aside class="notes">
+              <ul>
+                <li>Cześć, jestem Paweł</li>
+                <li>Jestem z zespołu odpowiedzialnego za R&D OVH Public Cloud</li>
+                <li>Pracuję przy OpenStacku</li>
+                <li>Wypowiadał się będę jako osoba prywatna</li>
+              </ul>
+            </aside>
+          </section>
+          <!-- About me -->
+          <section>
+            <h2>O mnie</h2>
+            <hr/>
+            <ul>
+              <li>Zajmuję się komputerami od kilku lat</li>
+              <li>Programowałem w C, Java, Python i Ruby</li>
+              <li>Zajmowałem się OpenStackiem jako chmurą prywatną</li>
+              <li>Pracowałem jako inżynier wsparcia klientów Cisco</li>
+              <li>Pracuję z OpenStackiem jako chmurą publiczną</li>
+              <li>Jeżdżę na motocyklu enduro i chodzę po górach</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Zajmuję się komputerami od kilku lat</li>
+                <li>Pisałem w różnych języka mniej lub bardziej świadomie - np. między innymi pracowałem jako Java/Android deweloper, nad aplikacją mobilną do zarządzania urządzeniami telco</li>
+                <li>Pierwszy raz z OpenStackiem zetknąłem się w pracy w projekcie na uczelni. Więcej za chwilę..</li>
+                <li>Pracowałem także jako inżynier wsparcia - obsługiwałem klientów firmy Cisco, którzy używali aplikacji do zarządzania dostępem do sieci</li>
+                <li>W wolnych chwilach, jak tylko motocykl działa, jeżdżę gdzieś po południu Polski (głównie okolice Krakowa) lub idę w góry</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <!-- About me with OpenStack -->
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <hr/>
+            <h2>Moja historia</h2>
+          </section>
+          <section>
+            <h4>OpenStack - kiedyś</h4>
+            <hr/>
+            <ul>
+              <li>Konfederacja usług cloud <a href="https:/github.com/dice-cyfronet/atmosphere">Atmosphere</a>
+              <li>Obsługa prywatnych instalacji OpenStack</li>
+              <li>Instalacja z paczek dystrybucji Ubuntu</li>
+              <li>Brak zarządzania konfiguracją</li>
+              <li>Wersja OpenStacka: Havana lub Icehouse</li>
+              <li>Głównie obsługa operatorska clouda</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>W ramach projektu VPH-Share, w zespole DICE Cyfronet AGH, pracowaliśmy nad rozwiązaniem integrującym różne instalacje cloud</li>
+                <ul>
+                  <li>posiadaliśmy proste instalacje OpenStacka na kilku hostach</li>
+                  <li>instalacja była oparta o paczki z dystrybucji Ubuntu</li>
+                  <li>totalny brak automatyzacji instalacji czy konfiguracji</li>
+                  <li>byliśmy typowymi użytkownikami OpenStacka, którzy potrzebowali clouda</li>
+                </ul>
+                <li>Wersji OpenStacka nie pamiętam, ale najprawdopodobniej była to wersja Icehouse lub, wcześniejsza wersja, Havana</li>
+                <li>Pracowałem nad narzędziami do obsługi zadań związanych z obsługą clouda</li>
+                <ul>
+                  <li>jednym z narzędzi był serwis odpowiedzialny za wykonywanie zmian na węźle sieciowym do obsługi DNATa - ówczesne rozwiązania sieciowe OpenStacka, jakie mieliśmy wdrożone, nie obsługiwały tego</li>
+                  <li>innym narzędziem była obsługa synchronizacji obrazów między instalacjami cloud</li>
+                </ul>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>OpenStack - teraz</h4>
+            <hr/>
+            <ul>
+              <li>Chmura publiczna OVH na OpenStacku</li>
+              <li>Instalacja specyficzna dla OVH</li>
+              <li>Konfiguracja z wykorzystaniem Puppeta</li>
+              <li>Workflow pracy nad kodem podobny community</li>
+              <li>Upgrade OpenStacka z Juno do Newtona i wyższej</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>O OVH usłyszałem nim cloud stał się realny i popularny - głównie za sprawą usługi 60free - mój kierownik projektował tę usługę</li>
+                <li>O historii rozwoju clouda w OVH za chwilę</li>
+                <li>Instalacja jest specyficzna ze względu na zaszłości historyczne w OVH związane z obsługą serwerów dedykowanych</li>
+                <li>Konfiguracja instalacji wykonywana jest z wykorzystaniem Puppeta</li>
+                <li>Nad kodem OpenStacka pracujemy w podobny sposób, jak w community</li>
+                <li>Ze względu na przeszłość sieciową, zajmuję się w OpenStacku komponentami sieciowymi - wykonywałem instalację usługi load balancer opartą o rozwiązanie OVH</li>
+                <li>Obecnie intensywnie pracujemy nad opracowaniem, wykonaniem i przetestowaniem procedury aktualizacji kilku starszych regionów do nowszej, wspólnej dla całego instalacji, wersji Newton</li>
+                <li>Następnie planujemy wykonać mniej inwazyjny i skomplikowany upgrade do nowszej wersji OpenStacka, która jest jeszcze wspierana przez community OpenStacka</li>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+          </section>
+          <section>
+            <h4>Historia</h4>
+            <hr/>
+            <ul>
+              <li>Cloud w latach 1977/1981/1993</li>
+              <li>Cloud jako produkt/usługa od 2000</li>
+              <li>Popularyzacja dzięki Amazon Elasitc Compute Cloud od 2006 - IaaS</li>
+              <li>Uruchomienie Google App Engine w 2008 - PaaS</li>
+              <li>OpenNebula w 2008 - private/hybrid-cloud open source platform</li>
+              <li>Uruchomienie Microsoft Azure w 2010 ogłoszonej w 2008</li>
+              <li>W 2010 rozpoczęcie prac nad OpenStackiem przez Rackspace i NASA</li>
+              <li>Założenie <a href="https://www.openstack.org/foundation/">fundacji OpenStack</a> w 2012</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>W 1977 symbol cloud używany był przez ARPANET do reprezentacji sieci rozpiętej między urządzeniami obliczeniowymi</li>
+                <li>W 1981 symbol cloud użyty został przez CSNET</li>
+                <li>W 1993 nazwa cloud użyta została do określenia platformy dla obliczeń rozproszonych.</li>
+                <li>Inne nazwy używane do nazywania systemów obliczeń rozproszonych to: grid, mesh, ..</li>
+                <li>Po 2000 cloud zaczął pojawiać się jako usługa/produkt</li>
+                <li>W 2006 Amazon uruchomił usługę Elastic Compute Cloud</li>
+                <li>W 2008 Google uruchomiło App Engine w wersji beta (pełne uruchomienie w 2012/13), OpenNebula została udostępniona, a Microsoft ogłosił, że będzie udostępniał Azure</li>
+                <li>W 2010 Microsoft uruchomiło Azure, a Rackspace i Nasa zaczęło prace nad OpenStackiem</li>
+                <li>Podobne do OpenStacka były projekty: CloudStack, Ganeti czy OpenNebula</li>
+                <li>W 2012 fundacja OpenStack została założona</li>
+              </ul>
+              Artykuły:
+              <ul>
+                <li>https://www.wired.com/1994/04/general-magic/</li>
+                <li>http://delivery.acm.org/10.1145/1730000/1721672/p50-armbrust.pdf</li>
+                <li>https://link.springer.com/content/pdf/10.1007%2Fs13174-010-0007-6.pdf</li>
+                <li>http://home.cse.ust.hk/~weiwa/teaching/Fall15-COMP6611B/reading_list/AboveTheClouds.pdf</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Fundacja</h4>
+            <hr/>
+            <ul>
+              <li>OSF odpowiada za OpenStacka, <a href="https://katacontainers.io">KataContainers</a>, <a href="https://zuul-ci.org">Zuul</a> oraz <a href="https://www.openstack.org/assets/edge/OpenStack-EdgeWhitepaper-v3-online.pdf">Edge</a></li>
+              <li>Fundacja OpenStack opiera się na trzech filarach: <a href="https://wiki.openstack.org/wiki/Governance/Foundation">Board of Directors</a>, <a href="https://governance.openstack.org/tc/">Technical Committee</a>, <a href="https://governance.openstack.org/uc/">User Committee</a></li>
+              <li><a href="https://governance.openstack.org/sigs/">SIG - Special Interest Groups</a> aka working groups</li>
+              <li><a href="https://governance.openstack.org/tc/reference/opens.html">Zasada czterech O: Open Source, Open Design, Open Development, Open Community</a></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Fundacja OpenStacka odpowiedzialna jest za dostarczanie zasobów potrzebnych do rozwoju OpenStacka i innych projektów</li>
+                <li>W skład fundacji wchodzą także KataContainers, Zuul, Edge</li>
+                <li>OpenStack opiera się na trzech jednostkach: Board of Directors, Technical i User Committee.</li>
+                <li>Board odpowiedzialny jest za fundację - mało o niej wiem</li>
+                <li>Technical Committee odpowiedzialny za rozwój całości</li>
+                <li>User Committee za używanie OpenStacka - Public Cloud WG</li>
+                <li>SIG to grupy, które są używane do współpracy między deweloperami, operatorami oraz użytkownikami - np. Public Cloud WG</li>
+                <li>Działania OpenStacka opiera się na zasadzie czterech O
+                  <ul>
+                    <li>We are committed to creating truly open source software that is usable and scalable</li>
+                    <li>We are committed to an open design process.</li>
+                    <li>We maintain a publicly available source code repository through the entire development process.</li>
+                    <li>One of our core goals is to maintain a healthy, vibrant developer and user community. Most decisions are made using a lazy consensus model.</li>
+                  </ul>
+                </li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Technical Committee</h4>
+            <hr/>
+            <ul>
+              <li>Pion odpowiedzialny za techniczne aspekty rozwoju OpenStacka</li>
+              <li>TC (członkowie i chairman), PTL, core reviewers, reviewers</li>
+              <li><a href="http://eavesdrop.openstack.org">Spotkania projektowe</a></li>
+              <li>Wybory do <a href="https://docs.openstack.org/project-team-guide/open-community.html#technical-committee-and-ptl-elections">TC oraz na PTL</a></li>
+              <li>Nominacje na <a href="https://docs.openstack.org/project-team-guide/open-development.html#core-reviewers">core reviewer</a></li>
+              <li><a href="https://docs.openstack.org/project-team-guide/index.html">Project Team Guide</a>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>W ramach TC znajduje się to wszystko, co dotyczy projektów i ich rozwoju pod kątem technicznym (technical leading)</li>
+                <li>Wybory do TC są określone wg przepisów działania pionu TC</li>
+                <li>Do TC wybieranych jest 13 osób raz na 6 miesięcy. Spośród tych 13 osób jedna osoba wybierana jest na TC chairman.</li>
+                <li>W ramach każdego z projektów są: PTLs, core reviewers, zwyczajni reviewers, deweloperzy</li>
+                <li>Zespół powinninen posiadać osoby takie jak: PTL oraz core reviewers</li>
+                <li>PTLs wybierani są co 6 miesięcy, przy okazji nowego releasu OpenStacka - nie ma określonej maksymalnej ilości kadencji</li>
+                <li>Core reviewers nominowani są przy okazji wyborów PTL</li>
+                <li>Każdy z projektów ma swoje spotkania, określony sposób działania, a także repozytoria, miejsce na Launchpadzie, etc.</li>
+                <li>Co do wyborów na PTL czy core reviewers - określa to dokument Project Team Guide</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Narzędzia i praca nad kodem</h4>
+            <hr/>
+            <ul>
+              <li>Komunikacja: głównie <a href="http://eavesdrop.openstack.org">IRC</a> i <a href="https://wiki.openstack.org/wiki/Mailing_Lists">listy dyskusyjne</a></li>
+              <li>Narzędzia do pracy z kodem: <a href="http://review.openstack.org">Gerrit oraz Git (repozytoria na <a href="https://github.com/openstack">GitHub</a>)</li>
+              <li>Tesowanie kodu: Unit tests, <a href="https://docs.openstack.org/tempest/latest/overview.html#tempest-the-openstack-integration-test-suite">Tempest</a> (integracyjne), <a href="https://refstack.openstack.org">RefStack</a> (zgodności API), <a href="https://wiki.openstack.org/wiki/Grenade">Grenade</a> (upgrade)</li>
+              <li>Zgłaszanie bugów/featurów(RFE): <a href="https://launchpad.net/openstack">Launchpad</a>/<a href="https://storyboard.openstack.org/#!/page/about">StoryBoard</a></li>
+              <li>Dokumentacja: <a href="https://specs.openstack.org">Specs</a> oraz <a href="https://docs.openstack.org/">dokumentacja</a></li>
+              <li>Workflow: od mastera do releasów, review na Gerricie, testy na gates, <a href="https://docs.openstack.org/infra/manual/developers.html">więcej info</a></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Większość zespołów używają IRCa oraz list dyskusyjnych do komunikacji</li>
+                <li>Kod trzymany w repozytoriach Gita, zaś review kodu wykonywane na Gerricie</li>
+                <li>Kod jest testowany: unit testy, tempesty, refstack tests, fullstack tests, grenade tests (upgrade)</li>
+                <li>Bugi czy nowe featury zgłaszane są przez otwarcie zgłoszenia (buga) na Launchpadzie lub StoryBoard</li>
+                <li>Dla buga wszystko odbywa się na Launchpadzie</li>
+                <li>Dla feature request - najpierw wykonany ma zostać RFE/specs, a dopiero później implementacja</li>
+                <li>Zmiany powinny być wykonywane dla mastera, a następnie być cherry-pickowane do wspieranych branchy</li>
+                <li>Zmiany są sprawdzane przez core revierów oraz inny reviewerów (każdy może robić review!)</li>
+                <li>Zmiany muszą przechodzić testy ;)</li>
+                <li>Jak wszystko jest okey, to zmiany automatycznie są merge'owane, ale nie cherry-pickowane (manualnie)</li>
+                <li>Oprócz specyfikacji, jest także zwykła dokumentacja, która dotyczy użytkowania czy zarządzania cloudem, itd.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Lifecycle</h4>
+            <hr/>
+            <ul>
+              <li><a href="https://governance.openstack.org/tc/goals/">Community goals</a></li>
+              <li>Release jest co 6 miesięcy</li>
+              <li>Dwie lub trzy wersje RC przed final release</li>
+              <li>End-of-Life po roku/dwóch latach</li>
+              <li><a href="https://docs.openstack.org/project-team-guide/stable-branches.html#maintenance-phases">Więcej info o wsparciu dla stabilnych wersji</a></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Dla poszczególnych wersji ogłoszane są Community goals, czyli cele, jakie mają zostać osiągnięte we wszystkich projektach - np. obsługa python3 czy usunięcie mox z testów</li>
+                <li>Wersje OpenStacka ogłaszane są przy okazji summitów</li>
+                <li>Wersje utrzymywane są przez kilka-kilkanaście miesięcy, następnie oznaczane są jako EoL i nie wykonuje się więcej zmian w wersjach EoL</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Architektura</h4>
+            <hr/>
+            <ul>
+              <li>Wiele serwisów do obsługi różnych zasobów</li>
+              <li>Komunikacja oparta o HTTP lub kolejki - RabbitMQ</li>
+              <li>Backend oparty o bazę danych - MySQL/MariaDB oraz PostgresSQL</li>
+              <li>Najważniejsze projekty: <a href="https://wiki.openstack.org/wiki/Keystone">Keystone</a>, <a href="">Nova</a>, Neutron, Glance</li>
+              <li>Więcej na <a href="https://www.openstack.org/software/">OpenStack Software Overview</a></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Całość opiera się na (mikro?)serwisach, które zarządzają zasobami i udostępniają API</li>
+                <li>Serwisy komunikują się między sobą przy pomocy zapytań HTTP poprzez REST API</li>
+                <li>Komunikacja między serwisami może opierać się także o systemy kolejkowe</li>
+                <li>Aby móc uruchomić podstawową wersję należy rozpocząć od Keystona (access), Nova (compute), Neutron (network) i Glance (images)</li>
+                <li>Inne przykłady oraz dokładniejszy opis innych konfiguracji, można znaleźć na stronach OpenStacka</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Instalacja</h4>
+            <hr/>
+            <ul>
+              <li>Głównie na <a href="https://docs.openstack.org/install-guide/preface.html#operating-systems">Ubuntu czy RedHat/CentOS</a></li>
+              <li>Standardowo instalacja z paczek dystrybucji systemu</li>
+              <li>Konfiguracja manulna (wg dokumentacji) lub z wykorzystaniem <a href="https://docs.openstack.org/puppet-openstack-guide/latest/">Puppeta</a> albo <a href="https://wiki.openstack.org/wiki/Chef">Chefa</a></li>
+              <li>Inne sposoby instalacji i konfiguracji: <a href="https://github.com/openstack/kolla">Kolla</a>, <a href="https://docs.openstack.org/openstack-helm/latest/install/index.html">Helm</a> lub przy pomocy <a href="https://docs.openstack.org/openstack-ansible/latest/index.html">Ansible</a></li>
+              <li>Inne mechanizmy: <a href="https://wiki.openstack.org/wiki/Fuel">Fuel</a>, <a href="https://wiki.openstack.org/wiki/TripleO">TripleO</a></li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Instalacje OpenStacka wykonywane są głównie na Ubuntu, RedHacie lub CentOSie albo Suse</li>
+                <li>Standardowo wykonuje się instalację o paczki zbudowane na potrzeby dystrybucji - Ubuntu to CloudArchive, RedHat/CentOS - RDO</li>
+                <li>Dokumentacja dla operatorów podaje, jak manualnie skonfigurować OpenStacka</li>
+                <li>W ramach OpenStacka istnieją także projekty, które dot. sposobów instalacji i konfiguracji OpenStacka przy pomocy Puppeta, Chefa</li>
+                <li>Poza instalacją/konfiguracją, opracowywane są także narzędzia do wdrażania kolejnych węzłów, np. z wykorzystaniem playbooków Ansible</li>
+                <li>Całość instalacji można wykonać w oparciu o Kubernetesa dzięki Helm, Dockera dzięki Kolla, czy też wykorzystując OpenStack Fuel lub OpenStack TripleO (OpenStack on OpenStack)</li>
+                <li>Oprócz tego istnieją jeszcze inne mechanizmy instalacji i zarządzania cloudem, które są rozwiązaniami autorskim poszczególnych dostawców clouda opartego o OpenStacka, jak np. Mirantis</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Wydarzenia i współpraca</h4>
+            <hr/>
+            <ul>
+              <li>OpenStack Summit i PTG - główne wydarzenia fundacji</li>
+              <li>OS Days, OS App Hackathon, Communit events - inne wydarzenia społeczności OpenStack</li>
+              <li><a href="http://stackalytics.com">Stackalytics</a> - statystyki dot. kodu i review</li>
+              <li>Różne modele biznesowe pracy z OpenStackiem</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Głównymi wydarzeniami są Summit (głównie w maju i listopadzie) i PTG (w lutym i wrześniu)</li>
+                <li>Innymi wydarzeniami, które są wykonywane lokalne, to OpenStack Days, jak np. te w Krakowie, w czerwcu</li>
+                <li>Często używanym narzędziem do sprawdzania wkładu w OpenStacka jest Stackalytics - dane oparte są o review i commity</li>
+                <li>Nad OpenStackiem można pracować na różne sposoby - to może być development, bycie operatorem czy użytkownikiem, dostarczenie platformy pod testy, współpraca z poszczególnymi grupami w ramach fundacji, itd.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Inne</h4>
+            <hr/>
+            <ul>
+              <li><a href="https://docs.openstack.org/project-team-guide/introduction.html">Trochę historii o rozwoju struktury zarządzania</a></li>
+              <li><a href="https://governance.openstack.org/tc/reference/principles.html">Zasady funkcjonujące w community</a></li>
+              <li><a href="https://www.openstack.org/projects/openstack-faq/">Q&A dot. community OpenStacka</a></li>
+              <li><a href="https://governance.openstack.org/tc/reference/projects/index.html">Lista projektów</a></li>
+              <li><a href="https://governance.openstack.org/tc/reference/help-most-needed.html">Lista najpilniejszych rzeczy</a></li>
+              <li><a href="https://governance.openstack.org/tc/reference/index.html">Inne dokumenty dot. TC</a></li>
+              <li><a href="https://docs.openstack.org/security-guide/">Guide dot. bezpieczeństwa</a></li>
+            </ul>
+          </section>
+        </section>
+        <!-- OpenStack in OVH -->
+        <section>
+          <section>
+            <h1>OpenStack w OVH</h1>
+          </section>
+          <section>
+            <h4>Historia</h4>
+            <hr/>
+            <ul>
+              <li>W 2012 rozpoczęto prace
+                <ul>
+                  <li>hubiC - usługa storage'u oparta o OpenStack Swift</li>
+                  <li>RunAbove - pierwszy Public Cloud oparty o OS</li>
+                </ul>
+              </li>
+              <li>W 2014/15 uruchomiono Public Cloud w OVH</li>
+              <li>Od 2015 uruchamiano kolejne region PCI w OVH</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Wybraliśmy OpenStacka, bo:</li>
+                <ul>
+                  <li>jest modularny</li>
+                  <li>działa na serwisach</li>
+                  <li>stoi za nim silne community</li>
+                  <li>całość napisana jest w pythonie</li>
+                </ul>
+                <li>Zaczęliśmy od wdrożenia OpenStacka na potrzeby Public Cloud Storage - usługi Keystone i Swift.</li>
+                <li>Następnie wdrożylismy OpenStacka na potrzeby Public Cloud Infrastructure, w ramach spin-offu RunAbove. Celem była wysoka wydajność za przystępną cenę.</li>
+                <li>Kiedy został osiągnięty pewien próg znajomości OpenStacka, został on wdrożony w ramach OVH jako Public Cloud.</li>
+                <li>Kilka znaczących elementów OpenStacka zostało zmienionych, jak np. zmiana sieciowych rozwiązań, aby wspierać publiczny adres IP na instancji.</li>
+                <li>Dodaliśmy własny monitoring (na potrzeby wewnętrzne i klienta).</li>
+                <li>Połączyliśmy PCI z systemem billingowym, który istniał w OVH.</li>
+              </ul>
+            <aside>
+          </section>
+          <section>
+            <h4>Wdrożenie</h4>
+            <hr/>
+            <ul>
+              <li>Wdrożenie oparte o paczki z Ubuntu z manualnymi zmianami</li>
+              <li>Puppet do zarządzania konfiguracją</li>
+              <li>Konfiguracja Puppeta oparta o OpenStackowe i OVH moduły</li>
+              <li>Od uruchomienia usługi PCI zaczęto budować paczki - CI/CD</li>
+              <li>Od wersji Newton:
+                <ul>
+                  <li>zaadaptowano workflow do pracy nad kodem z OpenStack community</li>
+                  <li>zaczęto używać r10k do Puppeta</li>
+                  <li>rozdzielono kod OVH od kodu z upstreamu</li>
+                </ul>
+              </li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Pierwsze wdrożenie bazowało na paczkach Ubuntu</li>
+                <li>Od samego początku używano Puppeta do konfiguracji OpenStacka</li>
+                <li>W trakcie rozwoju prac nad OpenStackiem, zaczęto dodawać specyficzne dla OVH moduły, które dotyczyły konfiguracji hostów, wewnętrznych systemów do monitoringu, itd.</li>
+                <li>Wraz z uruchomieniem usługi Public Cloud rozbudowano mechanizmy związane z pracą nad kodem OpenStack i na potrzeby wewnętrzne zaczęto budować paczki</li>
+                <li>Wraz z wdrożeniem wersji Newton w nowych regionach, zaadaptowano workflow OpenStacka do pracy nad kodem oraz zaczęto używać r10k do zarządzania modułami w Puppecie</li>
+                <li>Przy okazji, rozdzielono kod upstream od kodu OVH</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Workflow pracy z kodem</h4>
+            <hr/>
+            <ul>
+              <li>DevStack, Dev Infra, Preprod, Prod</li>
+              <li>Unit Tests, Tempest i testy integracyjne</li>
+              <li>Unit testy i tempesty uruchamiane przy każdej zmianie</li>
+              <li>Testy integracyjne uruchomione na preprodzie</li>
+              <li>Dokumentacja ze specyfikacją dla nowych funkcji</li>
+              <li>Zmiany do mastera i cherry-picki do release'ów</li>
+            </ul>
+            <aside class="notes">
+              <li>Deweloperkę najczęściej wykonujemy na DevStacku, chyba, że task dot. buga na produkcji, wtedy jeśli jest to niemożliwe z DevStackiem, to próbujemy zrobić repro na dev infrze</li>
+              <li>Do testowania używamy unit testów, tempestów na DevStacku oraz wew. testów integracyjnych</li>
+              <li>Unit testy oraz tempesty uruchamiane są przy okazji publikacji zmian do review</li>
+              <li>Preprod jest środowiskiem podobnym do proda, na którym najpierw jest instalowana nowa paczka i uruchamiane są testy integracyjne</li>
+              <li>Umieszczenie paczki na produkcji wykonywane jest przez zespół RUN po stwierdzeniu, że preprod działa z nową paczką</li>
+              <li>Nowe featury, które nie będą wysyłane do upstreamu, wymagają wew. specsów, czyli dokumentów określających, co nowy feature ma robić - tak samo w upstreamie</li>
+              <li>Po zatwierdzeniu specsa można przystąpić do implementacji</li>
+              <li>Po wykonaniu implementacji w masterze, należy wykonać cherry-picki do releasów</li>
+            </aside>
+          </section>
+          <section>
+            <h4>Praca z upstreamem</h4>
+            <hr/>
+            <ul>
+              <li>Repozytoria z kodem wewnętrznie hostowane</li>
+              <li>Zmiany do upstreamu wysyłane zgodnie z community workflow</li>
+              <li>Zmiany z upstreamu pobierane i syncowane z lokalnymi repozytoriami</li>
+              <li>Sync z upstreamem wykonywany manualnie</li>
+              <li>Kod Novy oraz Neutrona rozdzielony od kodu z upstreamu</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Zmiany jakie wykonujemy, o ile nie są związane z upstreamem, wykonujemy do repozytoriów lokalnych</li>
+                <li>Jesli zakładamy, że zmiana będzie w upstreamie, to pracujemy nad kodem w ramach upstreamu</li>
+                <li>Jeśli potrzebujemy nowszej wersji danego projektu, wykonujemy sync kodu z upstream do naszych repozytoriów</li>
+                <li>W przypadku Novy oraz Neutrona, kod OVH jest w oddzielnym repozytorium - struktura tych projektów pozwala na wykonywanie pluginów, etc</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Narzędzia</h4>
+            <hr/>
+            <ul>
+              <li>Gerrit do wykonywania review</li>
+              <li>Jenkins do uruchamiania
+                <ul>
+                  <li>testów jednostkowych dla review</li>
+                  <li>cyklicznych testów integracyjnych</li>
+                  <li>innych cyklicznych zadań</li>
+                </ul>
+              </li>
+              <li>Puppet do konfiguracji</li>
+              <li>Wewnętrzne narzędzia do zarządzania i monitorowania serwerów dedykowanych</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>Naszymi głównymi narzędziami są Gerrit oraz Jenkins</li>
+                <li>Cokolwiek co można zmienić i znajduje się w ramach kompetencji naszego zespołu, powinno przechodzić przez review - specsy, zmiany w kodzie, zmiany w devstacku, w budowaniu paczek, itd.</li>
+                <li>Zmiany w kodzie wymagają działających poprawnie testów</li>
+                <li>Puppet używany jest do uruchamiana DevInfry, Preproda i Proda - jego utrzymaniem zajmuje się w dużej mierze zespół odpowiedzialny za utrzymanie produkcji</li>
+                <li>Do uruchamiania DevInfry, itd. korzystamy z narzędzi, które powstały wcześniej w OVH i były wykorzystywane do obsługi serwerów dedykowanych</li>
+                <li>Wewnętrznie posługujemy się jeszcze narzędziami do zbierania logów z hostów, monitoringu hostów, zarządzania ich instalacją, itd.</li>
+                <li>Oprócz tych narzędzi, posługujemy się JIRĄ, Confluencem oraz Stashem - do logowania pracy, dokumentacji oraz utrzymania repozytoriów Gita</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Usługa w OVH</h4>
+            <hr/>
+            <ul>
+              <li>Dysk root instancji bazujący na SSD:
+                <ul>
+                  <li><b>plus</b>: wydajność</li>
+                  <li><b>minusy</b>: utrudniona migracja, nie da się szybko przywrócić VMki po wyłączeniu hosta</li>
+                </ul>
+              </li>
+              <li>Dodatkowe dyski (wolumeny) umieszczone są na Cephie</li>
+              <li>Sieć publiczna chroniona jest systemem Anti-DDoS</li>
+            </ul>
+            <aside class="notes">
+              <ul>
+                <li>W OVH Public Cloud oparty jest o OpenStacka zmodyfikowanego pod nasze potrzeby.</li>
+                <li>Naszym celami, jako operatora, są:</li>
+                <ul>
+                  <li>być up to date, ale nie zawsze</li>
+                  <li>dostarczać nowych usług, które pojawiają się w OpenStacku, takich L3 usługi, router, metryki</li>
+                </ul>
+              </ul>
+            </aside>
+          </section>
+        </section>
+        <!-- Usage of OpenStack -->
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <hr/>
+            <h2>Przykład użycia</h2>
+            <p><a href="https://github.com/pasuder/sodo-about-openstack/tree/gh-pages/data/example">Przykład na GitHubie</a></p>
+            <aside class="notes">
+              <p>Przejdźmy do przykładu użycia, czyli pokażemy, jak można wykorzystać projekt cloud, na własne potrzeby, w kilku prostych krokach.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Horizon</h4>
+            <hr/>
+            <img alt="Dodanie klucza SSH" style="width: 60%;" src="data/dumps/Zrzut ekranu 2018-05-11 o 10.28.52.png"></img>
+            <hr/>
+            <p>W projekcie wymagany jest klucz publiczny SSH</p>
+
+            <aside class="notes">
+              <p>Pierwsze co należy wykonać, to wygenerować klucz SSH na swoim komputerze, jeśli go nie ma, a następnie dodać jego publiczną cześć do projektu.</p>
+              <p>Klucz ten będzie wykorzystywany do logowania się na instancję.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Horizon</h4>
+            <hr/>
+            <img alt="Menu projektu" style="width: 90%;" src="data/dumps/Zrzut ekranu 2018-05-11 o 10.48.01.png"></img>
+            <hr/>
+            <p>Dodanie serwera można wykonać przez menu projektu</p>
+
+            <aside class="notes">
+              <p>Następnie możemy przejść do uruchomienia instancji.</p>
+              <p>Aby uruchomić nową instancję, należy w widoku infrastruktury projektu, wybrać z menu "Launch instance".</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Horizon</h4>
+            <hr/>
+            <img alt="Konfiguracja instancji" style="width: 60%;" src="data/dumps/Zrzut ekranu 2018-05-11 o 10.49.56.png"></img>
+            <hr/>
+            <p>Uruchomienie instancji</p>
+
+            <aside class="notes">
+              <p>Tworząc instację, należy wybrać region, obraz bazowy i typ serwera. Na potrzeby prezentacji użyłem Ubuntu 16.04, z odmianą sandbox, w Warszawie, o nazwie <tt>web-1</tt>.</p>
+              <p>W OVH, przy uruchomieniu instancji z OpenStack API, określany jest sposób naliczania opłat na godzinowy.</p>
+              <p>Czym jest region?</p>
+              <ul>
+                <li>jest to DC(centrum danych), w ramach którego znajdują się fizyczne maszyny, na których uruchamiane są instancje, czyli serwery</li>
+                <li>w panelu klienta widoczne są instancje ze wszystkich regionów</li>
+              </ul>
+              <p>Czym jest obraz bazowy?</p>
+              <ul>
+                <li>jest to dysk, z którego jest uruchamiana instancja</li>
+                <li>dla każdej z instancji, tworzony jest oddzielny dysk podstawowy, w oparciu o ten obraz</li>
+                <li>możliwe jest wykonanie własnych obrazów, wykonując snapshoty działającej instancji</li>
+              </ul>
+              <p>Czym jest typ serwera?</p>
+              <ul>
+                <li>jest to definicja zasobów, z którymi uruchamiana jest instancja</li>
+                <li>określa przede wszystkim ilość rdzeni, wielkość pamięci operacyjnej oraz rozmiar podstawowego dysku instancji</li>
+              </ul>
+              <p>
+                Dodatkowo, przy tworzeniu instancji możliwe jest określenie liczby instancji do uruchomienia, podanie skryptu do konfiguracji instancji (wykonywanego po uruchomieniu systemu) czy określenie sieci prywatnej, do jakiej ma zostać instancja podłączona.
+              </p>
+              <p>Przy uruchomieniu instancji użyjemy skryptu post-install, by móc skorzystać później z skryptów Ansible.</p>
+              <pre>
+#!/usr/bin/env bash
+
+sudo apt update
+sudo apt install -y build-essential python python-dev python-pip python-setuptools
+              </pre>
+              <p>O używaniu sieci prywatnej powiem przy okazji vRacka.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Horizon</h4>
+            <hr/>
+            <img alt="Logowanie" style="width: 90%;" src="data/dumps/Zrzut ekranu 2018-05-11 o 10.52.05.png"></img>
+            <hr/>
+            <p>Tworzenie instancji</p>
+
+            <aside class="notes">
+              Po chwili, gdy instancja będzie gotowa, będziemy mogli się zalogować.
+            </aside>
+          </section>
+          <section>
+            <h4>Instancja</h4>
+            <hr/>
+            <div>
+              <asciinema-player src="data/casts/01-check-instance.json"></asciinema-player>
+            </div>
+
+            <aside class="notes">
+              Oto przykład, na którym widać, że na nowo utworzonej instancji, jest określona liczba procesorów, ilości pamięci operacyjnej oraz jest określonej wielkości dysk twardy.
+              <pre>
+lscpu | grep -e Architecture -e CPU -e Thread -e Core
+free -m
+lsblk
+ip addr show ens3
+              </pre>
+            </aside>
+          </section>
+          <section>
+            <h4>CLI API</h4>
+            <hr/>
+            <div>
+              <asciinema-player src="data/casts/02-nova-commands.json"></asciinema-player>
+            </div>
+
+            <aside class="notes">
+              <p>Cloudem można także zarządzać API.</p>
+              <ul>
+                <li>Dostęp do OpenStack API daje możliwość korzystania z narzędzi i skryptów do automatyzacji działania instalacji opartej na cloudzie, jak na przykład Ansible, Terraform, itd.</li>
+                <li>Nasza instalacja posiada obecnie dwie wersje API: Juno oraz Newton. Pracujemy nad posiadaniem tylko jednej wersji - Newton.</li>
+              </ul>
+              <p>Oto przykład, na którym jest widoczne, jak można uruchomić instancję z poziomu OpenStack API. Po chwili można zalogować się na instancję przez SSH.</p>
+              <pre>
+source ~/Spaces/GitHub/openstack-playground/openrc-demo-waw1.sh
+nova list --fields name,status
+nova keypair-list
+nova keypair-add --pub-key ~/.ssh/id_rsa.pub psuder_desktop
+nova keypair-list
+nova boot --flavor s1-4 --image "Ubuntu 16.04" --nic net-name=Ext-Net --key-name psuder_desktop testing
+nova list --fields name,status
+nova list --fields name,status
+nova list --fields name,networks
+ssh ubuntu@54.37.131.86
+uptime
+nova list --fields name
+nova delete testing
+nova list --fields name
+              <pre>
+            </aside>
+          </section>
+        </section>
+        <!-- Networks in OVH OpenStack -->
+        <section>
+          <section>
+            <h1>Sieci w OVH OpenStack</h1>
+            <hr/>
+            <h2>Publiczna i prywatna vRack</h2>
+          </section>
+          <section>
+            <h4>Sieć publiczna w OVH</h4>
+            <hr/>
+            <ul>
+              <li>Publiczne adresy IP skonfigurowane bezpośrednio na instancji</li>
+              <li>Brak ruchu L2 na interfejsie instancji</li>
+              <li>Możliwość korzystania z adresów IP FailOver</li>
+              <li>Brak klasycznego węzła sieciowego</li>
+            </ul>
+            <pre style="font-size: 0.3em;">
+➜  ~ nova list --fields name,status,networks
++--------------------------------------+-------+--------+-----------------------------------------------+
+| ID                                   | Name  | Status | Networks                                      |
++--------------------------------------+-------+--------+-----------------------------------------------+
+| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1 | ACTIVE | Ext-Net=<span class="green">54.38.136.26</span>, 2001:41d0:601:2000::26c |
++--------------------------------------+-------+--------+-----------------------------------------------+
+            </pre>
+            <pre style="font-size: 0.3em;">
+ubuntu@web-1:~$ ip addr show ens3
+2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether fa:16:3e:5b:71:db brd ff:ff:ff:ff:ff:ff
+    inet <span class="green">54.38.136.26/32</span> brd 54.38.136.26 scope global ens3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::f816:3eff:fe5b:71db/64 scope link
+       valid_lft forever preferred_lft forever
+ubuntu@web-1:~$ ip route
+default via 54.38.136.1 dev ens3
+54.38.136.1 dev ens3  scope link
+            </pre>
+
+            <aside class="notes">
+            <p>Kilka zdań o sieci publicznej:</p>
+            <ul>
+              <li>sieć to zmodyfikowana część OpenStacka w OVH; całe API jest zgodne z OpenStack</li>
+              <li>każda z instancji posiada adres sieci publicznej; brak klasycznego Neutronowego węzłą sieciowego</li>
+              <li>adres sieci publicznej ma maskę /32; brak ruchu rozgłoszeniowego (L2) na interfejsie instancji</li>
+              <li>ruch między siecią OVH a zewnetrzną jest chroniony przez system Anti-DDoS</li>
+              <li>możliwość podpięcia adresów IP Failover z OVH do VMek, co pozwala na przeniesienie adresu IP z serwera dedykowanego</li>
+              <li>na slajdzie widoczny jest przykład instancji z przypisanym publicznym adresem IP</li>
+            </ul>
+            <p>A teraz przejdźmy do sieci prywatnych.</p>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img src="data/images/vrack.png" class="vrack"></img>
+            <hr/>
+            <p>Prywatne połączenie wszystkich serwerowni OVH na świecie</p>
+
+            <aside class="notes">
+              <p>Sieć prywatna (tenant network) oparta jest o usługę vRack OVH.</p>
+              <p>vRack pozwala na połączenie prywatną siecią L2 różne usługi, której mają do dostęp do vRacka.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img src="data/images/vrack-isolation.png" class="vrack"></img>
+            <hr/>
+            <p>vRack pozwala na odizolowanie najważniejszych serwerów w ramach prywatnej sieci VLAN</p>
+
+            <aside class="notes">
+              <p>Można wdrożyć aż do 4000 prywatnych sieci VLAN.</p>
+              <p>Sieci prywatne mogą służyć do różnych połączeń.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img src="data/images/vrack-hybride.png" class="vrack"></img>
+            <hr/>
+            <p>Możliwe połączenie Public Cloud z serwerami dedykowanymi</p>
+
+            <aside class="notes">
+              <p>Możliwe jest połączenie instancji public clouda z serwerami dedykowanymi.</p>
+              <p>Do serwerów dedykowanych dostarczane jest łącze trunk, a do instancji cloud - wiele interfejsów różnych sieci prywatnych - ramki VLAN nie są widoczne.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img alt="Dodawanie sieci prywatnej vRack" style="width: 30%;" src="data/dumps/Zrzut ekranu 2018-02-13 o 11.44.16.png"></img>
+            <hr/>
+            <p>Dodawanie sieci prywatnej vRack</p>
+
+            <aside class="notes">
+              <p>Jak to wygląda w praktyce? Aby dodać sieć prywatną, klikamy na "plus" w widoku vRacka, w projekcie cloud.</p>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img alt="Widok sieci prywatnych vRack" style="width: 40%;" src="data/dumps/Zrzut ekranu 2018-02-13 o 11.45.13.png"></img>
+            <hr/>
+            <p>Widok sieci prywatnych vRack</p>
+
+            <aside class="notes">
+              <p>Oto jak prezentowana jest lista sieci prywatnych vRack w projekcie cloud.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <img alt="Widok sieci prywatnych vRack" style="width: 80%;" src="data/dumps/Zrzut ekranu 2018-02-13 o 12.19.01.png"></img>
+            <hr/>
+            <p>Widok sieci w OpenStack Horizon</p>
+
+            <aside class="notes">
+              <p>Oto jak prezentowana jest lista sieci prywatnych vRack przez OpenStack Horizon.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <pre style="font-size: 0.4em;">
+➜  ~ neutron net-show Private-Net
+neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
++--------------------------+--------------------------------------+
+| Field                    | Value                                |
++--------------------------+--------------------------------------+
+| admin_state_up           | True                                 |
+| availability_zone_hints  |                                      |
+| availability_zones       | nova                                 |
+| created_at               | 2018-02-13T10:44:43Z                 |
+| description              |                                      |
+| id                       | adc65d0c-abd3-47d9-a1a3-96ed4ea50485 |
+| ipv4_address_scope       |                                      |
+| ipv6_address_scope       |                                      |
+| mtu                      | 9000                                 |
+| name                     | Private-Net                          |
+| project_id               | 84506b08626d4e03a581d170f3bc53d2     |
+| <span class="red">provider:network_type</span>    | <span class="red">vrack</span>                                |
+| <span class="red">provider:segmentation_id</span> | <span class="red">0</span>                                    |
+| qos_policy_id            |                                      |
+| revision_number          | 4                                    |
+| router:external          | False                                |
+| shared                   | False                                |
+| status                   | ACTIVE                               |
+| subnets                  | b55fd630-79e4-4101-9d30-12ba693533ca |
+| tags                     |                                      |
+| tenant_id                | 84506b08626d4e03a581d170f3bc53d2     |
+| updated_at               | 2018-02-13T10:44:49Z                 |
++--------------------------+--------------------------------------+
+            </pre>
+
+            <aside class="notes">
+              <p>Oto jak prezentowana jest lista sieci prywatnych vRack przez OpenStack API.</p>
+              <p>Ważny jest, aby `segmentation_id` był taki sam w każdym regionie.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <pre style="font-size: 0.4em;">
+➜  ~ neutron subnet-show b55fd630-79e4-4101-9d30-12ba693533ca
+neutron CLI is deprecated and will be removed in the future. Use openstack CLI instead.
++-------------------+----------------------------------------------------+
+| Field             | Value                                              |
++-------------------+----------------------------------------------------+
+| <span class="red">allocation_pools</span>  | <span class="red">{"start": "192.168.0.214", "end": "192.168.0.254"}</span> |
+| cidr              | 192.168.0.0/24                                     |
+| created_at        | 2018-02-13T10:44:49Z                               |
+| description       |                                                    |
+| dns_nameservers   |                                                    |
+| enable_dhcp       | True                                               |
+| gateway_ip        |                                                    |
+| host_routes       |                                                    |
+| id                | b55fd630-79e4-4101-9d30-12ba693533ca               |
+| ip_version        | 4                                                  |
+| ipv6_address_mode |                                                    |
+| ipv6_ra_mode      |                                                    |
+| name              |                                                    |
+| network_id        | adc65d0c-abd3-47d9-a1a3-96ed4ea50485               |
+| project_id        | 84506b08626d4e03a581d170f3bc53d2                   |
+| revision_number   | 2                                                  |
+| service_types     |                                                    |
+| subnetpool_id     |                                                    |
+| tenant_id         | 84506b08626d4e03a581d170f3bc53d2                   |
+| updated_at        | 2018-02-13T10:44:49Z                               |
++-------------------+----------------------------------------------------+
+            </pre>
+
+            <aside class="notes">
+              <p>Subnet jest taki sam w wielu regionach, ale są różne zakresy adresów przyznawanych przez DHCP, tak aby nie było overlappingu adresów IP.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <div>
+              <asciinema-player src="data/casts/03-vrack-commands.json"></asciinema-player>
+            </div>
+
+            <aside class="notes">
+              <p>Oto przykład, na którym jest widoczne, jak można uruchomić instancję z poziomu OpenStack API z dodatkowym interfejsem oraz jak podłączyć dodatkowy interfejs sieci prywatnej do działającej instancji.</p>
+
+              <pre>
+nova list --fields name,status
+nova list --fields name,networks
+
+nova boot --flavor s1-4 --image "Ubuntu 16.04" --nic net-name=Ext-Net --nic net-name=Private-Net --key-name psuder_desktop testing
+nova list --fields name,status
+nova list --fields name,status
+nova list --fields name,networks | grep 192.168.0.218
+nova delete 735c849c-ad24-4093-8f33-5ce005c2470e
+
+neutron net-list | grep Private-Net
+nova interface-attach web-1 --net-id adc65d0c-abd3-47d9-a1a3-96ed4ea50485
+ssh ubuntu@54.38.136.26
+ip link
+sudo dhclient ens6
+
+nova list --fields name,networks | grep 192.168.0.218
+              </pre>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <pre style="font-size: 0.25em;">
+➜  ~ nova list --fields name,status,networks
++--------------------------------------+-------+--------+----------------------------------------------------------------------------+
+| ID                                   | Name  | Status | Networks                                                                   |
++--------------------------------------+-------+--------+----------------------------------------------------------------------------+
+| 9c1097ae-2e7e-4244-91b6-017ed75191b4 | db-1  | ACTIVE | Ext-Net=145.239.28.190, 2001:41d0:601:2000::245; <span class="green">Private-Net=192.168.0.224</span> |
+| a8337ef7-693b-4f8f-a90c-b5d4ed087528 | web-1 | ACTIVE | Ext-Net=54.38.136.26, 2001:41d0:601:2000::26c; <span class="green">Private-Net=192.168.0.218</span>   |
++--------------------------------------+-------+--------+----------------------------------------------------------------------------+
+            </pre>
+            <img alt="Widok listy instancji z dwoma sieciami" style="width: 55%;" src="data/dumps/Zrzut ekranu 2018-02-13 o 14.10.28.png"></img>
+            <hr/>
+            <p>Widok listy instancji z dwoma sieciami</p>
+
+            <aside class="notes">
+              <p>Oto jak prezentowana jest lista instancji, która mają prywatne interfejsy.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Sieć prywatna w OVH - vRack</h4>
+            <hr/>
+            <pre style="font-size: 0.45em;">
+ubuntu@web-1:~$ mtr -r -c 1 <span class="green">192.168.0.224</span>
+Start: Tue Feb 13 13:17:33 2018
+HOST: web-1                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 192.168.0.224              0.0%     1    1.4   1.4   1.4   1.4   0.0
+            </pre>
+            <pre style="font-size: 0.45em;">
+ubuntu@web-1:~$ mtr -r -c 1 <span class="red">145.239.28.190</span>
+Start: Tue Feb 13 13:17:52 2018
+HOST: web-1                       Loss%   Snt   Last   Avg  Best  Wrst StDev
+  1.|-- 54.38.136.1                0.0%     1    0.2   0.2   0.2   0.2   0.0
+  2.|-- 192.168.250.254            0.0%     1    0.1   0.1   0.1   0.1   0.0
+  3.|-- 192.168.250.8              0.0%     1    0.3   0.3   0.3   0.3   0.0
+  4.|-- ip-145-239-28.eu           0.0%     1    0.4   0.4   0.4   0.4   0.0
+            </pre>
+
+            <aside class="notes">
+              <p>Na slajdzie widać, jaka jest trasa pakietu w ramach sieci publicznej oraz lokalnej (prywatnej) vRack.</p>
+              <p>Technologia vRack (wirtualna szafa) pozwala na połączenie, odizolowanie i rozdzielenie usług OVH w ramach jednej lub kilku prywatnych i zabezpieczonych sieci L2.</p>
+            </aside>
+          </section>
+        </section>
+        <!-- Automation example -->
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <hr/>
+            <h2>Automatyzacja</h2>
+          </section>
+          <section>
+            <h4>Automatyzacja</h4>
+            <hr/>
+            <ul>
+              <li>Publiczne API OpenStack</li>
+              <li>Narzędzia do automatyzacji: Ansible, Terraform, ...</li>
+              <li>Konteneryzacja aplikacji</li>
+            </ul>
+
+            <aside class="notes">
+              <p>Przejdźmy do następnego tematu naszej prezentacji, a mianowicie użycia OpenStack API z wykorzystaniem skryptów do automatyzacji, jak np. Ansible.</p>
+              <ul>
+                <li>Dzięki OpenStack API oraz dostępnych publicznie narzędzi, można z łatwością uruchomić usługę opartą o cloud.</li>
+                <li>Z wykorzystaniem Ansible czy Terraform możemy uruchomić i skonfigurować kilka instancji na potrzeby uruchomienia aplikacji na cloudzie.</li>
+                <li>Aplikacje można uruchamiać bezpośrednio na instancjach lub w ramach kontenerów uruchomionych na instancjach.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Automatyzacja</h4>
+            <hr/>
+            <div>
+              <asciinema-player src="data/casts/04-ansible-commands.json"></asciinema-player>
+            </div>
+
+            <aside class="notes">
+              <p>Oto przykład, gdzie widać, jak z pomocą skryptu Ansible uruchamiane są dwie instancje i konfigurowane, tak aby można była na nich korzystać z mysqla i wordpressa.</p>
+              <pre>
+ansible-playbook playbook-1.yml
+nova list --fields name,status,networks
+ssh ubuntu@54.37.130.17
+sudo docker ps
+mysql -u db_user -H 192.168.0.223 -p
+show databases;
+use db_wordpress;
+show tables;
+              <pre>
+            </aside>
+          </section>
+          <section>
+            <h4>Automatyzacja</h4>
+            <hr/>
+            <img alt="Widok instalacji Wordpressa" style="width: 60%;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.11.40.png"></img>
+            <hr/>
+            <p>Widok instalacji Wordpressa</p>
+
+            <aside class="notes">
+              <p>Oto jak to wygląda z poziomu UI. Na slajdzie widać ekran podstawowej konfiguracji Wordpressa.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Automatyzacja</h4>
+            <hr/>
+            <img alt="Widok Wordpressa" style="width: 50%;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.12.11.png"></img>
+            <hr/>
+            <p>Widok Wordpressa</p>
+
+            <aside class="notes">
+              <p>Po chwili widać panel admina Wordpress.</p>
+            </aside>
+          </section>
+        </section>
+        <!-- Swift and integration with Wordpress -->
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <hr/>
+            <h2>Przestrzeń dyskowa</h2>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <img alt="Widok przestrzeni dyskowej" style="width: 60%;" src="data/dumps/Zrzut ekranu 2018-05-11 o 13.17.20.png"></img>
+            <hr/>
+            <p>Widok przestrzeni dyskowej</p>
+            <aside class="notes">
+              <p>W ramach OpenStacka istnieje serwis Swift, który pozwala na statyczne przechowywanie plików.</p>
+              <p>Object storage możemy użyć jako przestrzeń na backup.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <div>
+              <img alt="Dodawanie nowego kontenera" style="width: 44%; vertical-align: middle;" src="data/dumps/Zrzut ekranu 2018-05-11 o 13.18.31.png"></img>
+              <img alt="Dodawanie nowego kontenera" style="width: 53%; vertical-align: middle; display: inline-block;" src="data/dumps/Zrzut ekranu 2018-05-11 o 13.19.20.png"></img>
+            </div>
+            <hr/>
+            <p>Dodawanie nowego kontenera</p>
+
+            <aside class="notes">
+              <p>Z poziomu panelu klienta można utworzyć nowy kontener na pliki. Wymagane jest wybranie regionu oraz typu.</p>
+              <p>Typ oznaczony jako hosting statyczny, to kontener publiczny, który posiada podstawowy layout strony HTML.</p>
+              <p>Kontener z sekcji Public Cloud Archive to kontener, do którego można wysyłać pliki przy pomocy rsynca.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <img alt="Instalowanie pluginu w Wordpress" style="width: 80%;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.12.40.png"></img>
+            <hr/>
+            <p>Instalowanie pluginu w Wordpress</p>
+
+            <aside class="notes">
+              <p>Dla Wordpressa istnieje plugin, który korzysta z OpenStack Swift (przestrzeni dyskowej), gdzie umieszczany jest backup Wordpressa.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <img alt="Konfigurowanie pluginu w Wordpress" style="width: 80%;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.13.19.png"></img>
+            <hr/>
+            <p>Konfigurowanie pluginu w Wordpress</p>
+
+            <aside class="notes">
+              <p>Plugin pozwala na wybranie OpenStack Swift.</p>
+              <p>Aby skonfigurować w pełni ten plugin, potrzebujemy wykonać kilka dodatkowych kroków przez panel klienta.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <span>
+              <img alt="Dodawanie nowego użytkownika w projekcie OpenStack" style="width: 50%; vertical-align: middle;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.13.44.png"></img>
+              <img alt="Dodawanie nowego użytkownika w projekcie OpenStack" style="width: 40%; vertical-align: middle; display: inline-block;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.14.08.png"></img>
+            </span>
+            <hr/>
+            <p>Dodawanie nowego użytkownika w projekcie OpenStack</p>
+
+            <aside class="notes">
+              <p>Należy utworzyć nowego użytkownika, który ma dostęp do projektu cloud przez OpenStack API.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <div class="container">
+              <span>
+                <img alt="Pobranie konfiguracji dostępu do OpenStack API" style="width: 35%; vertical-align: middle;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.14.16.png"></img>
+                <img alt="Pobranie konfiguracji dostępu do OpenStack API" style="width: 55%; vertical-align: middle; display: inline-block;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.14.35.png"></img>
+              </span>
+            </div>
+            <hr/>
+            <p>Pobranie konfiguracji dostępu do OpenStack API</p>
+
+            <aside class="notes">
+              <p>Do konfiguracji pluginu potrzeba nam kilka dodatkowych informacji, które można odczytać z pliku konfiguracyjnego OpenStack.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <img alt="Pobranie konfiguracji dostępu do OpenStack API" style="width: 60%;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.15.27.png"></img>
+            <hr/>
+            <p>Pobranie konfiguracji dostępu do OpenStack API</p>
+
+            <aside class="notes">
+              <p>W pliku konfiguracyjnym można znaleźć informacje o:</p>
+              <ul>
+                <li>URL serwisu do uwierzytelniania usługi</li>
+                <li>UUID projektu</li>
+                <li>nazwę projektu</li>
+                <li>nazwę użytkownika</li>
+                <li>nazwę regionu (wybrany przy pobieraniu pliku konfiguracyjnego)</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <div class="container">
+              <span>
+                <img alt="Konfiguracja pluginu w Wordpress" style="width: 55%; vertical-align: middle;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.15.42.png"></img>
+                <img alt="Konfiguracja pluginu w Wordpress" style="width: 40%; vertical-align: middle; display: inline-block;" src="data/dumps/Zrzut ekranu 2018-02-16 o 12.16.10.png"></img>
+              </span>
+            </div>
+            <hr/>
+            <p>Konfiguracja pluginu w Wordpress</p>
+
+            <aside class="notes">
+              <p>Dane z pliku konfiguracyjnego podajemy w konfiguracji pluginu w Wordpressie.</p>
+              <p>Przed zapisaniem sprawdzamy, czy można ustawienia działają.</p>
+            </aside>
+          </section>
+          <section>
+            <h4>Przestrzeń dyskowa</h4>
+            <hr/>
+            <img alt="Backup" style="width: 55%;"  src="data/dumps/Zrzut ekranu 2018-02-16 o 12.16.44.png"></img>
+            <img alt="Backup" style="width: 55%;"  src="data/dumps/Zrzut ekranu 2018-02-16 o 12.17.03.png"></img>
+
+            <aside class="notes">
+              <p>Po wykonaniu backup, w kontenerze widoczne są pliku wygenerowane przez plugin.</p>
+            </aside>
+          </section>
+        </section>
+        <!-- Ending -->
+        <section>
+          <section>
+            <h1>OpenStack</h1>
+            <hr/>
+            <h2>Podsumowanie</h2>
+          </section>
+          <section>
+            <h4>Podsumowanie</h4>
+            <hr/>
+            <ul>
+              <li>OpenStack jest rozwiązaniem otwartym i tworzone jest przez community</li>
+              <li>OpenStacka można uruchamiać jako chmurę prywatną lub publiczną</li>
+              <li>Ze względu na powszechność OpenStacka, istnieje wiele narzędzi do automatyzacji</li>
+            </ul>
+          </section>
+          <section>
+            <h1>Pytania</h1>
+
+            <aside class="notes">
+              <p>Jakie mają państwo pytania?</p>
+            </aside>
+          </section>
+          <section>
+            <h1>Dziękuję</h1>
+
+            <aside class="notes">
+              <p>Ukłony, oklaski..</p>
+            </aside>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https:/github.com/hakimel/reveal.js#configuration
+      // - https:/github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+        dependencies: [
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/search/search.js', async: true },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+    <script type="text/javascript" src="js/asciinema-player.js"></script>
+  </body>
+</html>
