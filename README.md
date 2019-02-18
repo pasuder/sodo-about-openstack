@@ -9,7 +9,7 @@ Version in polish.
 ## How to open
 
 - download it or clone
-- run `python3 -m http.server` or `python -m SimpleHTTPServer`
+- run `python3 -m http.server` or `python2 -m SimpleHTTPServer`
 - open your web browser with address http://localhost:8000
 
 Ensure that you have Internet connectivity to download all necessary scripts and styles.
